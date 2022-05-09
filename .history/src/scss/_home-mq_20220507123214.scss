@@ -1,0 +1,870 @@
+@media only screen and (min-width: 1600px){
+  $left-margin: 14rem;
+  $base-font-size: 1.2rem;
+  $main-title: 3.7rem;
+  $h1: 2.9rem;
+  $h2: 2.5rem;
+
+
+  /*Navigation*/
+  nav {
+    ul{
+      margin: 2rem $left-margin 2rem $left-margin;
+      li{
+          a{
+              font-size: $base-font-size;
+          }
+      }
+    }
+  }
+
+
+  /*Header*/
+  header{
+    .left{
+        margin: 10rem 0 0 $left-margin;
+        h1{
+            font-size: $main-title;
+        }
+        p{
+            font-size: $base-font-size;
+        }
+        .cta{
+            p{
+                font-size: $base-font-size;
+            }
+        }
+    }   
+    img{
+        margin-top: 4em;
+        height: 36rem;
+    } 
+  }
+
+
+  /*Quik-Facts*/
+  section.quik-facts{
+    margin: 8rem 20rem 8rem 20rem;
+    .quik-fact{
+        p.number{
+            font-size: 3.9;
+        }
+        p{
+            font-size: $base-font-size;
+        }
+    }
+  }
+
+
+  /*Orbitale Ebene*/
+  section.orbit{
+    margin: 9rem $left-margin 9rem $left-margin;
+    h1{
+        font-size: $h1;
+    }
+
+    p{
+        font-size: $base-font-size;
+    }
+
+    div.content{
+        p{
+          font-size: $base-font-size;
+        }
+    }
+
+    h2{
+        font-size: $h2;
+    }
+
+
+      /*Tabs*/
+    .struggle{
+      margin-top: 2rem;
+      background: #242230;
+      width: 26.9rem;
+      border-radius: 10px;
+      ul{
+          display: flex;
+          padding: 0.7rem;
+      }
+    }
+    .tabs .trigger{
+      font-size: $base-font-size;
+    }
+
+
+    .dropdown .trigger{
+      font-size: $base-font-size;
+    }
+  
+  
+    .dropdown .content.active{
+        font-size: $base-font-size;
+    }
+  }
+  .more{
+    margin: 3rem $left-margin 4rem $left-margin;
+    h1{
+        font-size: $h1;
+    }
+  }
+
+  footer{
+    margin: $left-margin 0 3rem 0;
+    div{
+        a{
+            font-size: $base-font-size;
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 1460px){
+  .more{
+    .planets{
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1409px){
+  header{
+    .left{
+      display: grid;
+	    place-items: center;
+      margin: 8rem auto 0 auto;
+      text-align: center;
+      p{
+        text-align: center;
+        margin-left: 2.5rem;
+      }
+    }
+    img{
+      display: none;
+    }
+  }
+
+  section.quik-facts{
+    margin: 7rem 10rem 6rem 10rem;
+}
+
+  .more{
+    .planets{
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1274px){
+  $left-margin: 5rem;
+
+  /*Navigation*/
+  nav {
+    ul{
+      margin: 2rem $left-margin 2rem $left-margin;
+      li{
+          a{
+              font-size: $base-font-size;
+          }
+      }
+    }
+  }
+
+
+  /*Header*/
+  header{
+    .left{
+        .cta{
+            width: 18.5rem;
+        }
+    }   
+  }
+
+  /*Orbitale Ebene*/
+  section.orbit{
+    margin: 9rem $left-margin 9rem $left-margin;
+
+    .struggle{
+      margin-top: 2rem;
+      background: #242230;
+      width: 23.85rem;
+      border-radius: 10px;
+      ul{
+          display: flex;
+          padding: 0.7rem;
+      }
+    }
+  }
+  .more{
+    margin: 3rem $left-margin 4rem $left-margin;
+  }
+
+  footer{
+    margin: $left-margin 0 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .more{
+    .planets{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1144px){
+  nav{
+    padding-top: 1rem;
+    .mainMenu{
+      .home{
+        display: none;
+      }
+      margin: 1.25rem 4.9rem 0 0;
+      position: fixed;
+      height: 31rem;
+      width: 8rem;
+      top: 0;
+      right: 0;
+      z-index: 999;
+      flex-direction: column;
+      justify-content: right;
+      align-items: right;
+      background-color: #242230;
+      border-radius: 10px;
+      display: none;
+      .closeMenu{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        .exit{
+          &:hover{
+           color: #45415E;
+          }
+        }
+      }
+      .menu-vl{
+        border-bottom: solid #38364c 2.2px;
+        display: block;
+        margin: .3rem 0rem .3rem 4rem;
+        width: 3rem;
+        z-index: 100000;
+      }
+      li{
+        margin: .5rem 1rem ;
+        text-align: right;
+        .margin{
+          margin-top: 2.5rem;
+        }
+      }  
+    }
+    .second-nav{
+        display: flex;
+        margin: .6rem 5rem .7rem 5rem;
+        li{
+          a{
+            margin-top: .4rem;
+          }
+        }
+        .openMenu{
+          display: block;
+          margin-top: -.35em;
+          cursor: pointer;
+          .burger{
+           &:hover{
+              background-color: #242230;
+              border-radius: 9px;          
+            }
+          }   
+        }
+    } 
+  }
+
+  section.quik-facts{
+    margin: 7rem 5rem 6rem 5rem;
+  }
+
+  section.orbit{
+    display: block;
+    text-align: justify;
+    h1{
+      text-align: left;
+    }
+    h2{
+      font-size: $h2;
+      font-family: 'Playfair';
+      font-weight: bold;
+      margin-top: 3.9rem;
+      margin-bottom: 1.7rem;
+    }
+    p{
+      text-align: justify;
+      margin-top: -.4rem;
+    }
+    div.content{
+        background: #242230;
+        border-radius: 10px;
+        display: block;
+        padding: 1.5rem 0rem 1rem 1.5rem;
+        img{
+          height: 16rem;
+        }
+        .vl{
+          border-top: 3.5px solid #383647;
+          border-left: none;
+          margin: 1rem 0;
+          width: 6rem;
+          height: 3px;
+          border-radius: 0;
+        }
+        p{
+          margin: 1.5rem 2rem .7rem 0rem;
+          text-align: justify;
+        }
+    }
+    .tabs {
+      display: inline-block;
+      .struggle{
+        margin-top: -.5rem;
+        background: #242230;
+        width: 23.9rem;
+        border-radius: 10px;
+      }
+      .content.active{
+        display: block;
+        margin-top: 1.5rem;
+      }
+    }
+
+
+    .dropdown{
+      width: 100%;
+    }
+    .dropdown .content.active{
+        display: block;
+        border: 2px solid #242230;
+        background: #18171F;
+        font-size: $base-font-size;
+        border-radius: 0 0 10px 10px;
+        padding: .5rem .7rem .5rem 1.5rem;
+        margin-top: -1px;
+    }
+    .more{
+      h1{
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 946px){
+  section.quik-facts{
+    justify-content: center;
+    margin: 10rem 7rem 6rem 7rem;
+    .quik-fact{
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 790px){
+  .more{
+    .planets{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 730px){
+  $left-margin: 3rem;
+  $base-font-size: 1rem;
+  $main-title: 3.2rem;
+  $h1: 2.3rem;
+  $h2: 2rem;
+
+  nav{
+    .mainMenu{
+      margin: 1rem $left-margin 0 0;
+      a{
+        font-size: $base-font-size;
+      }
+      .exit{
+        height: 1.1rem
+      }
+      height: 29rem;
+      width: 7.5rem;
+    }
+    .second-nav{
+        margin: .6rem $left-margin .7rem $left-margin;
+        a{
+          font-size: $base-font-size;
+          margin-bottom: 1rem;
+        }
+        .burger{
+          height: 2.6rem;
+        }
+    }
+  }
+
+  header{
+    .left{
+      margin-top: 6rem;
+      p{
+        text-align: center;
+        margin-left: 2.5rem;
+        width: 25rem;
+      }
+      h1{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 20rem;
+        font-size: $main-title;
+      }
+    }
+  }
+
+  section.quik-facts{
+    margin: 7rem $left-margin 5rem $left-margin;
+    .quik-fact{
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      p{
+        margin-top: 1.4rem;
+        font-size: $base-font-size;
+      }
+    }
+  }
+
+  /*Orbitale Ebene*/
+  section.orbit{
+    margin: 2rem $left-margin 2rem $left-margin;
+    h1{
+      font-size: $h1;
+      margin: 4rem 0 1.5rem 0;
+    }
+    h2{
+      font-size: $h2;
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    p{
+      font-size: $base-font-size;
+    }
+    div.content{
+        background: #242230;
+        border-radius: 10px;
+        display: block;
+        padding: 1rem 0rem .7rem 1rem;
+        img{
+          height: 10rem;
+        }
+        .vl{
+          height: 2px;
+        }
+        p{
+          font-size: $base-font-size;
+          margin-top: 0;
+        }
+    }
+
+    .tabs {
+      display: inline-block;
+      .struggle{
+        margin-top: -.5rem;
+        margin-bottom: -.2rem;
+        background: #242230;
+        width: 100%;
+        border-radius: 10px;
+        ul{
+          display: flex;
+          justify-content: center;
+          padding: 0.7rem;
+          li{
+            font-size: $base-font-size;
+          }
+        }
+      }
+      .content.active{
+        display: block;
+        margin-top: 1.5rem;
+      }
+    }
+
+
+    .dropdown{
+      width: 100%;
+      .trigger{
+        font-size: $base-font-size;
+      }
+    }
+    .dropdown .content.active{
+        display: block;
+        border: 2px solid #242230;
+        background: #18171F;
+        font-size: $base-font-size;
+        border-radius: 0 0 10px 10px;
+        padding: 1rem 0rem .5rem 1.5rem;
+        margin-top: -1px;
+    }
+  }
+
+  .more{
+    h1{
+      font-size: $h1;
+      margin-top: 7.5rem;
+    }
+    margin: 3rem $left-margin 4rem $left-margin;
+    font-size: $base-font-size;
+  }
+
+  footer{
+    margin: $left-margin 0 3rem 0;
+    div{
+      a{
+        font-size: $base-font-size;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 556px){
+  footer{
+    margin: $left-margin 0 3rem 0;
+    justify-content: center;
+    text-align: center;
+    div{
+      a{
+        font-size: $base-font-size;
+      }
+      .portfolio{
+        display: none;
+      }
+    }
+  }
+  .tabs{
+    .struggle{
+      margin: 2rem 0 0 0;
+      background: #242230;
+      width: 50rem;
+      border-radius: 10px;
+      ul{
+          display: flex;
+          justify-content: space-evenly;
+          padding: 0.7rem;
+          li{
+            font-size: $base-font-size;
+          }
+      }
+    }
+  }
+  section.orbit{
+    p{
+      text-align: left;
+    }
+    div.content{
+      p{
+        text-align: left;
+    }
+  }
+}
+}
+
+@media only screen and (max-width:500px){
+  $left-margin: 1.5rem;
+  $base-font-size: .95rem;
+  $main-title: 3rem;
+  $h1: 2.3rem;
+  $h2: 2rem;
+
+  nav{
+    .mainMenu{
+      margin: 1rem $left-margin 0 0;
+      .exit{
+        height: 1rem;
+      }
+    }
+    .second-nav{
+        margin: .4rem $left-margin .8rem $left-margin;
+        a{
+          margin-bottom: .6rem;
+        }
+        .burger{
+          height: 2.5rem;
+        }
+    }
+  }
+
+  header{
+    .left{
+      margin-top: 6rem;
+      p{
+        font-size: $base-font-size;
+        text-align: center;
+        margin-left: 2.5rem;
+        width: 18rem;
+      }
+      h1{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 20rem;
+        font-size: $main-title;
+      }
+      .cta{
+        width: 16rem;
+        a{
+          font-size: $base-font-size;
+        }
+        p{
+          font-size: $base-font-size;
+          margin-left: .5rem;
+        }
+      }
+    }
+  }
+
+  section.quik-facts{
+    margin: 5rem $left-margin 5rem $left-margin;
+    .quik-fact{
+      margin-top: 1rem;
+      p.number{
+        font-size: 2.6rem;
+      }
+      p{
+        font-size: $base-font-size;
+      }
+    }
+  }
+
+  /*Orbitale Ebene*/
+  section.orbit{
+    margin: 2rem $left-margin 2rem $left-margin;
+    h1{
+      font-size: $h1;
+      margin: 2rem 0 1.5rem 0;
+    }
+    h2{
+      font-size: $h2;
+      margin-top: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    p{
+      font-size: $base-font-size;
+      text-align: left;
+    }
+    div.content{
+        background: #242230;
+        border-radius: 10px;
+        display: block;
+        padding: .7rem .7rem .7rem .7rem;
+        img{
+          height: 9rem;
+        }
+        p{
+          font-size: $base-font-size;
+          margin: .7rem .5rem .5rem .5rem;
+          text-align: left;
+        }
+    }
+    .tabs{
+      .struggle{
+        margin: -1rem 0 0 0;
+        background: #242230;
+        border-radius: 10px;
+        ul{
+            display: flex;
+            justify-content: center;
+            padding: 0.7rem;
+            li{
+              font-size: $base-font-size;
+            }
+        }
+      }
+    } 
+    .dropdown{
+      .trigger{
+        font-size: $base-font-size;
+      }
+      .content.active{
+        display: block;
+        border: 2px solid #242230;
+        background: #18171F;
+        font-size: $base-font-size;
+        border-radius: 0 0 10px 10px;
+        padding: .5rem 1rem .5rem 1rem;
+        margin-top: -1px;
+    }
+    } 
+  }
+
+  .more{
+    h1{
+      font-size: $h1;
+      margin-top: 5.5rem;
+    }
+    margin: 3rem $left-margin 4rem $left-margin;
+  }
+
+  footer{
+    margin: $left-margin 0 0 0;
+    div{
+      margin: $left-margin 0 $left-margin 0;
+      a{
+        font-size: $base-font-size;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 441px){
+  section.orbit{
+    p{
+      text-align: left;
+    }
+    div.content{
+      p{
+        text-align: left;
+    }
+  }
+    .struggle{
+      ul{
+        flex-wrap: wrap;
+        li{
+          width: 100%;
+        }
+      }
+    }
+  }  
+}
+
+@media only screen and (max-width: 392px){
+  $left-margin: 1.5rem;
+  $main-title: 2.4rem;
+  $h1: 2rem;
+  $h2: 1.8rem;
+
+  header{
+    .left{
+      h1{
+        font-size: $main-title;
+        width: 14.5rem;
+      }
+      p{
+        width: 14.5rem;
+      }
+    }
+  }
+
+  section.quik-facts{
+    margin: 4rem $left-margin 3rem $left-margin;
+    .quik-fact{
+      p.number{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: .9rem;
+      }
+    }
+  }
+
+  section.orbit{
+    margin: 2rem $left-margin 2rem $left-margin;
+    h1{
+      font-size: $h1;
+      margin: 2rem 0 1rem 0;
+    }
+    h2{
+      font-size: $h2;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+    }
+    p{
+      text-align: left;
+    }
+    div.content{
+        background: #242230;
+        border-radius: 10px;
+        display: block;
+        padding: .7rem .7rem .7rem .7rem;
+        img{
+          height: 7rem;
+        }
+        p{
+          text-align: left;
+        }
+    }
+  }
+  
+  .more{
+    h1{
+      font-size: $h1;
+      margin-top: 4.5rem;
+    }
+    .planets{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+    }
+  }
+  footer{
+    div{
+      margin: 2 4rem 2 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 332px){
+  header{
+    .left{
+      h1{
+        font-size: 2rem;
+        width: 12rem;
+      }
+      p{
+        width: 12rem;
+      }
+    }
+  }
+  section.quik-facts{
+    .quik-fact{
+      p.number{
+        font-size: 2.3rem;
+      }
+      p{
+        margin-top: .9rem;
+        font-size: .9rem;
+      }
+    }
+  }
+  section.orbit{
+    p{
+      text-align: left;
+    }
+    div.content{
+        background: #242230;
+        border-radius: 10px;
+        display: block;
+        padding: .7rem .7rem .7rem .7rem;
+        img{
+          height: 7rem;
+        }
+        p{
+          text-align: left;
+        }
+    }
+  }
+}
+

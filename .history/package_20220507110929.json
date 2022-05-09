@@ -1,0 +1,19 @@
+{
+  "name": "solar-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -w npm:watch:*",
+    "watch:index": "node_modules/.bin/babel src/index.js -w -o dist/scripts/index.js",
+    "watch:ui": "node_modules/.bin/babel src/ui.js -w -o dist/scripts/ui.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "concurrently": "^7.1.0"
+  }
+}

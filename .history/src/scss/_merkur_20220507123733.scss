@@ -1,0 +1,21 @@
+div.sketchfab-embed-wrapper{
+  display: grid;
+  place-content: center;
+  iframe{
+      border-radius: 10px;
+      width: 77rem;
+      margin: 1rem auto 1rem auto;
+  }
+}
+
+.mercury-gif{
+  transform: rotate(90deg);
+  border-radius: 8px;
+  margin-left: 8rem;
+}
+
+.video{
+  border-radius: 8px;
+  margin-left: 8rem;
+  height: 15rem;
+}

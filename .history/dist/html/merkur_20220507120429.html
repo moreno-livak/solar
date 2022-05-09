@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Erscheinungsbild -->
+    <link rel="icon" href="assets/Merkur_Icon.png">
+    <title>Merkur</title>
+    <link href="../css/home.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <ul class="second-nav">
+          <li><a href="../index.html">Home</a></li>
+          <div class="openMenu"><img class="burger" src="Assets/Menu-Icon.svg" alt="Menu"></div>
+      </ul>
+      <ul class="mainMenu">
+          <li><a class="home" href="../index.html">Home</a></li>
+          <li><a class="active margin" href="html/merkur.html">Merkur</a></li>
+          <div class="menu-vl"></div>
+          <li><a href="">Venus</a></li>
+          <div class="menu-vl"></div>
+          <li><a href="">Erde</a></li>
+          <div class="menu-vl"></div>
+          <li><a href="">Mars</a></li>
+          <div class="menu-vl"></div>
+          <li><a href="">Jupiter</a></li>
+          <div class="menu-vl"></div>
+          <li><a href="">Saturn</a></li>
+          <div class="menu-vl"></div>
+          <li><a href="">Uranus</a></li>
+          <div class="menu-vl"></div>
+          <li><a href="">Neptun</a></li>
+          <div class="closeMenu"><img class="exit" src="Assets/Exit-Menu.svg" alt="Exit"></div>
+      </ul>
+  </nav>
+
+
+
+  <section class="orbit">
+
+    <div class="dropdown">
+      <div class="trigger">Selbst Organisation</div>
+      <div class="content">
+        <p>Als immer mehr Asteroiden, Kometen und Staub ihr Zuhause auf den 
+        Planten oder der Sonne durch Aufprall fanden, passierten immer weniger 
+        Kollisionen. Durch die Krater auf z.B. unserem Mond, kann man sehen wie 
+        oft die Objekte des jungen Sonnensystems bombadiert wurden bis all das 
+        Material sich organisiert hat und ein Zuhause gefunden hat.</p>
+      </div>
+    </div>
+
+
+    <div class="content">
+        <img src="assets/Protostern.png" alt="Protostern">
+        <div class="vl"></div>
+        <p>Innerhalb weniger tausend Jahre begannen die Einschläge der 
+        einfallenden Klumpen energischer zu werden, wodurch sich das Objekt 
+        in der Mitte erwärmt. Mit zunehmender Masse formte dies 
+        einen <span class="tooltip-dark" id="tooltip" data-message="Ein sehr junger Stern">
+        Protostern</span>.</p>
+    </div>
+  </section>
+
+
+  <script>
+    class Tooltip {
+  constructor(element){
+    this.element = element;
+    this.message = element.getAttribute('data-message');
+  }
+  init(){
+    const tip = document.createElement('div');
+    tip.classList.add('tip');
+    tip.textContent = this.message;
+    this.element.appendChild(tip);
+
+		// Wenn Maus drüber fährt Klasse hinzügen
+    this.element.addEventListener('mouseenter', () => {
+      tip.classList.add('active');
+    });
+
+    // Wenn Maus wegeht wird Klasse entfernt
+    this.element.addEventListener('mouseleave', () => {
+      tip.classList.remove('active');
+    });
+  }
+}
+
+class Tabs {
+  constructor(container){
+    this.container = container;
+    this.tabs = container.querySelectorAll('.trigger');
+  }
+  init(){
+    this.tabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        if(e.target.tagName === 'LI'){
+          this.toggleTabs(e);
+          this.toggleContent(e);
+        }
+      });
+    });
+  }
+  toggleTabs(e){
+    // remove current active classes
+    this.tabs.forEach(tab => tab.classList.remove('active'));
+    // add new active class
+    e.target.classList.add('active');
+  }
+  toggleContent(e){
+    // remove current active classes
+    this.container.querySelectorAll('.content').forEach(item => {
+      item.classList.remove('active');
+    });
+    // add new active class
+    const selector = e.target.getAttribute('data-target');
+    const content = this.container.querySelector(selector);
+    content.classList.add('active');
+  }
+}
+
+
+class Dropdown {
+  constructor(container){
+    this.container = container;
+    this.trigger = container.querySelector('.trigger');
+    this.content = container.querySelector('.content');
+  }
+  init(){
+    this.trigger.addEventListener('click', () => {
+      this.trigger.classList.toggle('active');
+      this.content.classList.toggle('active');
+    })
+  }
+};
+
+
+
+
+// tooltip
+const tooltip = new Tooltip(document.querySelector('#tooltip'));
+// const tooltip2 = new Tooltip(document.querySelector('#tooltip2'));
+tooltip.init();
+// tooltip2.init();
+
+
+// tabs
+const tabs = new Tabs(document.querySelector('.tabs'));
+tabs.init();
+
+
+// dropdown
+const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+  const instance =  new Dropdown(dropdown);
+  instance.init();
+})
+
+
+// MobileMenu
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+function show() {
+  mainMenu.style.display = 'flex';
+  mainMenu.style.top = '0';
+}
+function close() {
+  mainMenu.style.top = '-100%';
+}
+
+  </script>
+</body>
+</html>
