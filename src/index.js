@@ -1,7 +1,7 @@
+const swup = new Swup();
 
 // tooltip
 const tooltips = document.querySelectorAll('.tooltip');
-console.log(tooltips);
 
 tooltips.forEach(tooltip => {
   const instance = new Tooltip(tooltip);

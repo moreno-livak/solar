@@ -1,8 +1,8 @@
 "use strict";
 
-// tooltip
+var swup = new Swup(); // tooltip
+
 var tooltips = document.querySelectorAll('.tooltip');
-console.log(tooltips);
 tooltips.forEach(function (tooltip) {
   var instance = new Tooltip(tooltip);
   instance.init();
