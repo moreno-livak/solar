@@ -1,12 +1,12 @@
 "use strict";
 
 // tooltip
-var tooltip = new Tooltip(document.querySelector('#tooltip'));
-var tooltip2 = new Tooltip(document.querySelector('#tooltip2'));
-var tooltip3 = new Tooltip(document.querySelector('#tooltip3'));
-tooltip.init();
-tooltip2.init();
-tooltip3.init(); // tabs
+var tooltips = document.querySelectorAll('.tooltip');
+console.log(tooltips);
+tooltips.forEach(function (tooltip) {
+  var instance = new Tooltip(tooltip);
+  instance.init();
+}); // tabs
 
 var tabs = new Tabs(document.querySelector('.tabs'));
 tabs.init(); // dropdown

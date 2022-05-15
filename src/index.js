@@ -1,11 +1,12 @@
 
 // tooltip
-const tooltip = new Tooltip(document.querySelector('#tooltip'));
-const tooltip2 = new Tooltip(document.querySelector('#tooltip2'));
-const tooltip3 = new Tooltip(document.querySelector('#tooltip3'));
-tooltip.init();
-tooltip2.init();
-tooltip3.init();
+const tooltips = document.querySelectorAll('.tooltip');
+console.log(tooltips);
+
+tooltips.forEach(tooltip => {
+  const instance = new Tooltip(tooltip);
+  instance.init();
+})
 
 
 // tabs

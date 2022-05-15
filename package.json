@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "concurrently npm:watch:*",
     "watch:index": "node_modules/.bin/babel src/index.js -w -o dist/scripts/index.js",
-    "watch:ui": "node_modules/.bin/babel src/ui.js -w -o dist/scripts/ui.js"
+    "watch:ui": "node_modules/.bin/babel src/ui.js -w -o dist/scripts/ui.js",
+    "watch:swup": "node_modules/.bin/babel src/swup.js -w -o dist/scripts/swup.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,8 @@
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
     "concurrently": "^7.1.0"
+  },
+  "dependencies": {
+    "swup": "^2.0.14"
   }
 }

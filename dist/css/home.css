@@ -1,4 +1,34 @@
 /*Variablen*/
+/*Animation*/
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.transition-fade {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: .7em;
@@ -18,7 +48,7 @@
 }
 
 body {
-  background: #18171F;
+  background: #121212;
   margin: 0;
   font-family: 'Poppins';
   color: white;
@@ -28,7 +58,7 @@ body {
 
 /*Navigation*/
 nav {
-  border-bottom: 1px #5D5D5D solid;
+  border-bottom: 1px #2C2C2C solid;
 }
 
 nav .second-nav {
@@ -66,7 +96,7 @@ nav ul li a {
   border: none;
   color: white;
   font-size: 1.1rem;
-  font-weight: medium;
+  font-weight: 300;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -129,42 +159,46 @@ header .left h1 {
 header .left p {
   font-size: 1.1rem;
   margin-right: 3rem;
+  font-weight: 300;
+  color: #F9F9F9;
 }
 
 header .left .cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #242230;
-  border-radius: 10px;
+  background: #1E1E1E;
+  border-radius: 20px;
   margin-top: 2.5rem;
-  width: 19.5rem;
+  width: 19rem;
 }
 
 header .left .cta a {
   background: #FDB513;
   margin-right: 1em;
-  padding: .5em 1em .5em 1em;
-  border-radius: 8px;
-  color: #18171F;
-  font-weight: bold;
+  padding: .6em 1.1em .6em 1.1em;
+  border-radius: 13px;
+  color: #1E1E1E;
+  font-weight: 650;
   font-size: 1.1rem;
   text-decoration: none;
-  margin: .5em;
+  margin: .6em;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 header .left .cta a:hover {
   margin: 0;
-  padding: 1em 1.5em 1em 1.5em;
+  padding: 1.2em 1.7em 1.2em 1.7em;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 20px;
 }
 
 header .left .cta p {
   margin: auto 1rem auto 1rem;
   font-size: 1.1rem;
+  font-weight: 300;
 }
 
 header img {
@@ -194,7 +228,7 @@ section.quik-facts .quik-fact {
 
 section.quik-facts .quik-fact p.number {
   font-family: 'Playfair';
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: bold;
   color: #ffffff;
   margin: 1rem 1.5rem 0 1.5rem;
@@ -202,6 +236,7 @@ section.quik-facts .quik-fact p.number {
 
 section.quik-facts .quik-fact p {
   font-family: 'Poppins';
+  font-weight: 300;
   color: #BDBDBD;
   font-size: 1.1rem;
 }
@@ -210,6 +245,7 @@ section.quik-facts .quik-fact p {
 section.orbit {
   margin: 9rem 9rem 9rem 9rem;
   /*Tabs*/
+  /* Dropdown */
 }
 
 section.orbit h1 {
@@ -224,8 +260,9 @@ section.orbit .top {
 
 section.orbit p {
   font-size: 1.1rem;
-  text-align: justify;
-  font-weight: 400;
+  text-align: left;
+  color: #F9F9F9;
+  font-weight: 300;
   margin-bottom: 2rem;
   margin-top: -.7rem;
 }
@@ -235,16 +272,16 @@ section.orbit p.under {
 }
 
 section.orbit div.content {
-  background: #242230;
-  border-radius: 10px;
+  background: #1E1E1E;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: .7rem 3rem .7rem .7rem;
+  padding: .9rem 3rem .9rem .9rem;
 }
 
 section.orbit div.content .vl {
-  border-left: 3.5px solid #383647;
+  border-left: 3.5px solid #2C2C2C;
   margin: auto 2rem auto 2rem;
   height: 6rem;
   border-radius: 10px;
@@ -253,12 +290,17 @@ section.orbit div.content .vl {
 section.orbit div.content p {
   font-size: 1.1rem;
   text-align: justify;
-  font-weight: 400;
+  font-weight: 300;
+  color: #F9F9F9;
   margin: auto 0 auto 0;
 }
 
+section.orbit div.content img {
+  border-radius: 15px;
+}
+
 section.orbit div.content.GIF-Content {
-  padding: 0rem 3rem 0rem .7rem;
+  padding: .2rem 2.5rem .2rem .8rem;
 }
 
 section.orbit h2 {
@@ -277,11 +319,11 @@ section.orbit .tooltip-dark {
 section.orbit .tooltip-dark .tip {
   visibility: hidden;
   width: 200px;
-  background-color: #18171F;
+  background-color: #121212;
   color: #fff;
   text-align: center;
-  border-radius: 10px;
-  padding: 10px 5px 10px 5px;
+  border-radius: 15px;
+  padding: 11px 7px 11px 7px;
   position: absolute;
   display: inline-block;
   bottom: 120%;
@@ -307,11 +349,11 @@ section.orbit .tooltip-light {
 section.orbit .tooltip-light .tip {
   visibility: hidden;
   width: 245px;
-  background-color: #242230;
+  background-color: #1E1E1E;
   color: #fff;
   text-align: center;
-  border-radius: 10px;
-  padding: 10px 5px 10px 5px;
+  border-radius: 15px;
+  padding: 11px 7px 11px 7px;
   position: absolute;
   display: inline-block;
   bottom: 120%;
@@ -330,9 +372,9 @@ section.orbit .tooltip-light .tip.active {
 
 section.orbit .struggle {
   margin-top: 2rem;
-  background: #242230;
-  width: 23.9rem;
-  border-radius: 10px;
+  background: #1E1E1E;
+  width: 24.1rem;
+  border-radius: 20px;
 }
 
 section.orbit .struggle ul {
@@ -343,36 +385,31 @@ section.orbit .struggle ul {
 }
 
 section.orbit .struggle.merkur {
-  margin-top: 2rem;
-  background: #242230;
-  width: 24.3rem;
-  border-radius: 10px;
-}
-
-section.orbit .struggle.merkur ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0.7rem;
+  width: 24.7rem;
 }
 
 section.orbit .tabs .trigger {
   list-style-type: none;
   padding: 10px;
-  background: #242230;
-  border-radius: 6px;
+  background: #1E1E1E;
+  border-radius: 15px;
   display: inline-block;
   padding: 10px 20px;
+  font-weight: 500;
   cursor: pointer;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 section.orbit .tabs .trigger.active {
-  background: #18171F;
-  color: white;
+  background: #121212;
+  color: #F9F9F9;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 section.orbit .tabs .content {
-  background: #242230;
+  background: #1E1E1E;
   display: none;
 }
 
@@ -385,7 +422,7 @@ section.orbit .tabs .content.active {
 
 section.orbit .link {
   color: #4884F6;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 section.orbit .dropdown {
@@ -393,28 +430,30 @@ section.orbit .dropdown {
 }
 
 section.orbit .dropdown .trigger {
-  border: 1px solid #242230;
-  border-radius: 10px;
-  background: #242230;
+  border-radius: 20px;
+  background: #1E1E1E;
   font-size: 1.1rem;
+  font-weight: 500;
   position: relative;
   cursor: pointer;
   margin: 2rem 0 1em 0;
   padding: 1.5rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 section.orbit .dropdown .trigger.active {
-  border: 1px solid #242230;
-  border-radius: 10px 10px 0 0;
-  background: #242230;
+  border-radius: 20px 20px 0 0;
   margin: 2rem 0 0em 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 section.orbit .dropdown .trigger::after {
   content: ">";
   font-family: 'Arial';
   font-size: large;
-  background: #312f3f;
+  background: #2C2C2C;
   border-radius: 50%;
   padding: .5rem 2rem .5rem 2rem;
   margin: -.4rem -1.5rem 0rem 0rem;
@@ -443,12 +482,17 @@ section.orbit .dropdown .content {
 
 section.orbit .dropdown .content.active {
   display: block;
-  border: 2px solid #242230;
-  background: #18171F;
+  background: #1E1E1E;
   font-size: 1.1rem;
-  border-radius: 0 0 10px 10px;
+  font-weight: 300;
+  border-radius: 0 0 20px 20px;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  margin-top: -1px;
+  margin-top: .5rem;
+  -webkit-transition: display 0.5s;
+  transition: display 0.5s;
+  opacity: 1;
+  -webkit-animation: fadeIn 500ms;
+          animation: fadeIn 500ms;
 }
 
 /*Planeten Erkunden*/
@@ -479,8 +523,8 @@ section.orbit .dropdown .content.active {
   -ms-grid-rows: 3rem 4rem;
       grid-template-rows: 3rem 4rem;
   place-items: center;
-  background: #242230;
-  border-radius: 10px;
+  background: #1E1E1E;
+  border-radius: 20px;
   text-align: center;
   bottom: 0;
   padding: 1rem 2rem 1rem 2rem;
@@ -521,7 +565,7 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border-top: 1px #5D5D5D solid;
+  border-top: 1px #2C2C2C solid;
 }
 
 footer div {
@@ -570,7 +614,7 @@ footer div a:hover:before {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   border-radius: 8px;
-  margin: 0 1rem 0 .7rem;
+  margin: 0 1rem 0 1rem;
 }
 
 .video {
@@ -608,7 +652,7 @@ footer div a:hover:before {
   place-items: center;
   margin: -11rem 0 1rem 0;
   z-index: 100000;
-  background: #242230;
+  background: #1E1E1E;
   width: 100%;
   border-radius: 20px;
 }

@@ -8,7 +8,7 @@
     <!-- Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Playfair Display -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,8 @@
             <div class="openMenu"><img class="burger" src="assets/Menu-Icon.svg" alt="Menu"></div>
         </ul>
         <ul class="mainMenu">
-            <li><a class="active home" href="index.html">Home</a></li>
-            <li><a class="margin" href="html/merkur.html">Merkur</a></li>
+            <li><a class="active home" href="/dist/index.html">Home</a></li>
+            <li><a class="margin"  href="/dist/html/merkur.html">Merkur</a></li>
             <div class="menu-vl"></div>
             <li><a href="">Venus</a></li>
             <div class="menu-vl"></div>
@@ -51,12 +51,12 @@
 
 
 
-    <header>
+    <header id="swup" class="transition-fade">
         <div class="left">
             <h1>Enzyklopädie unseres Sonnensystems</h1>
-            <p>Alles was du über die Planeten unsres Sonnensystems wissen könntest.</p>
+            <p>Alles was du über unser Sonnensystem wissen könntest, einfach erklärt.</p>
             <div class="cta">
-                <a href="html/merkur.html">Tour</a>
+                <a href="/dist/html/merkur.html">Tour</a>
                 <p>bei Merkur starten</p>
             </div>
         </div>
@@ -67,7 +67,7 @@
 
 
     
-    <section class="quik-facts">
+    <section class="quik-facts" id="swup" class="transition-fade">
         <div class="quik-fact">
             <p class="number">8</p>
             <p>Bekannte<br>Planeten</p>
@@ -91,7 +91,7 @@
 
         <p>Wenn wir uns das Sonnensystem vorstellen, 
            halten wir es für selbstverständlich das alle 
-           <span class="tooltip-light" id="tooltip" data-message="Planeten, Asteroiden und Monde">
+           <span class="tooltip-light tooltip" id="" data-message="Planeten, Asteroiden und Monde">
             Objekte</span> sich auf 
            einer flachen Ebene in die selbe Richtung bewegen.</p>
 
@@ -112,7 +112,7 @@
            der Anziehungskraft des anderen.
            <br><br>
            Bis eines Tages ein Energiestoß von außen, wie eine 
-           <span class="tooltip-light" id="tooltip2" data-message="Explosion 
+           <span class="tooltip-light tooltip" id="" data-message="Explosion 
            eines massereichen Sterns am Ende seiner Lebenszeit">
            Supernova</span>
            Schockwelle, die Teilchen im Nebel erschütterte und diese dazu gebracht werden zu 
@@ -126,7 +126,7 @@
             <p>Innerhalb weniger tausend Jahre begannen die Einschläge der 
             einfallenden Klumpen energischer zu werden, wodurch sich das Objekt 
             in der Mitte erwärmt. Mit zunehmender Masse formte dies 
-            einen <span class="tooltip-dark" id="tooltip3" data-message="Ein sehr junger Stern">
+            einen <span class="tooltip-dark tooltip" id="" data-message="Ein sehr junger Stern">
             Protostern</span>.</p>
         </div>
 
@@ -256,7 +256,8 @@
         </div>
     </footer>
 
-
+    <script src="../node_modules/swup/dist/swup.min.js"></script>
+    <script src="scripts/swup.js"></script>
     <script src="scripts/ui.js"></script>
     <script src="scripts/index.js"></script>
 </body>
