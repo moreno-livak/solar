@@ -1,2 +1,1 @@
-
-var swup = new Swup();
+const swup = new Swup();
