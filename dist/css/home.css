@@ -1285,6 +1285,7 @@ footer div a:hover:before {
     margin-left: 0rem;
     margin-right: 0rem;
     width: 20rem;
+    font-family: 'Playfair-Display';
     font-size: 3rem;
   }
   header .left .cta {
