@@ -436,7 +436,7 @@ section.orbit .tabs .content.active {
 
 section.orbit .link {
   color: #4884F6;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 section.orbit .dropdown {
