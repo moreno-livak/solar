@@ -1,53 +1,6 @@
 "use strict";
 
-function init() {
-  if (document.querySelector('.tooltip')) {
-    var _tooltips = document.querySelectorAll('.tooltip');
-
-    _tooltips.forEach(function (tooltip) {
-      var instance = new Tooltip(tooltip);
-      instance.init();
-    });
-  }
-
-  if (document.querySelector('.tabs')) {
-    var _tabs = new Tabs(document.querySelector('.tabs'));
-
-    _tabs.init();
-  }
-
-  if (document.querySelector('.dropdown')) {
-    var _dropdowns = document.querySelectorAll('.dropdown');
-
-    _dropdowns.forEach(function (dropdown) {
-      var instance = new Dropdown(dropdown);
-      instance.init();
-    });
-  }
-
-  if (document.querySelector('.mainMenu')) {
-    var _show = function _show() {
-      _mainMenu.style.display = 'flex';
-      _mainMenu.style.top = '0';
-    };
-
-    var _close = function _close() {
-      _mainMenu.style.top = '-100%';
-    };
-
-    var _mainMenu = document.querySelector('.mainMenu');
-
-    var _closeMenu = document.querySelector('.closeMenu');
-
-    var _openMenu = document.querySelector('.openMenu');
-
-    _openMenu.addEventListener('click', _show);
-
-    _closeMenu.addEventListener('click', _close);
-  }
-} // tooltip
-
-
+// tooltip
 var tooltips = document.querySelectorAll('.tooltip');
 tooltips.forEach(function (tooltip) {
   var instance = new Tooltip(tooltip);
@@ -76,4 +29,50 @@ function show() {
 
 function close() {
   mainMenu.style.top = '-100%';
+} // Swup Reload Function
+
+
+function init() {
+  if (document.querySelector('.tooltip')) {
+    var _tooltips = document.querySelectorAll('.tooltip');
+
+    _tooltips.forEach(function (tooltip) {
+      var instance = new Tooltip(tooltip);
+      instance.init();
+    });
+  }
+
+  if (document.querySelector('.tabs')) {
+    var _tabs = new Tabs(document.querySelector('.tabs'));
+
+    _tabs.init();
+  } // if (document.querySelector('.dropdown')){
+  //   const dropdowns = document.querySelectorAll('.dropdown');
+  //   dropdowns.forEach(dropdown => {
+  //     const instance =  new Dropdown(dropdown);
+  //     instance.init();
+  //   })
+  // }
+
+
+  if (document.querySelector('.mainMenu')) {
+    var _show = function _show() {
+      _mainMenu.style.display = 'flex';
+      _mainMenu.style.top = '0';
+    };
+
+    var _close = function _close() {
+      _mainMenu.style.top = '-100%';
+    };
+
+    var _mainMenu = document.querySelector('.mainMenu');
+
+    var _closeMenu = document.querySelector('.closeMenu');
+
+    var _openMenu = document.querySelector('.openMenu');
+
+    _openMenu.addEventListener('click', _show);
+
+    _closeMenu.addEventListener('click', _close);
+  }
 }
