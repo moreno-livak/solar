@@ -60,14 +60,11 @@ function init() {
     tabs.init();
   }
 
-  // if (document.querySelector('.dropdown')){
-  //   const dropdowns = document.querySelectorAll('.dropdown');
-
-  //   dropdowns.forEach(dropdown => {
-  //     const instance =  new Dropdown(dropdown);
-  //     instance.init();
-  //   })
-  // }
+  if (document.querySelector('.dropdown')){
+    const dropdowns = document.querySelector('.dropdown');
+    const instance =  new Dropdown(dropdowns);
+    instance.init();
+  }
 
   if (document.querySelector('.mainMenu')){
     const mainMenu = document.querySelector('.mainMenu');

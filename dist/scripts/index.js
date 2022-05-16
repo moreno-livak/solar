@@ -46,14 +46,14 @@ function init() {
     var _tabs = new Tabs(document.querySelector('.tabs'));
 
     _tabs.init();
-  } // if (document.querySelector('.dropdown')){
-  //   const dropdowns = document.querySelectorAll('.dropdown');
-  //   dropdowns.forEach(dropdown => {
-  //     const instance =  new Dropdown(dropdown);
-  //     instance.init();
-  //   })
-  // }
+  }
 
+  if (document.querySelector('.dropdown')) {
+    var _dropdowns = document.querySelector('.dropdown');
+
+    var instance = new Dropdown(_dropdowns);
+    instance.init();
+  }
 
   if (document.querySelector('.mainMenu')) {
     var _show = function _show() {
