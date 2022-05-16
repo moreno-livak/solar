@@ -14,16 +14,6 @@ $h2: 2.4rem;
       to { opacity: 1; }
 }
 
-.transition-fade {
-    transition: 0.5s;
-    opacity: 1;
-  }
-
-html.is-animating .transition-fade {
-    opacity: 0;
-    transform: translateX(100px);
-}
-
 /*Scrollbar*/
 
 ::-webkit-scrollbar{

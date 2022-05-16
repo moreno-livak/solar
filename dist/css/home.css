@@ -17,6 +17,18 @@
   }
 }
 
+.transition-fade {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: .7em;
