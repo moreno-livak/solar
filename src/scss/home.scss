@@ -3,9 +3,9 @@
 $left-margin: 9rem;
 $base-font-size: 1.1rem;
 $transition: .4s;
-$main-title: 3.5rem;
-$h1: 2.8rem;
-$h2: 2.4rem;
+$main-title: 3.4rem;
+$h1: 2.5rem;
+$h2: 2.1rem;
 
 
 /*Animation*/
@@ -21,7 +21,7 @@ $h2: 2.4rem;
 
 html.is-animating .transition-fade {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(40px);
 }
 
 
@@ -468,7 +468,7 @@ iframe{
 /*Planeten Erkunden*/
 
 .more{
-    margin: -1.5rem $left-margin 4rem $left-margin;
+    margin: -2.5rem $left-margin 4rem $left-margin;
     h1{
         font-size: $h1;
         font-family: 'Playfair';
@@ -554,9 +554,7 @@ footer{
 }
 
 
-/*Sonstiges von anderen Seiten*/
-
-  
+/*Sonstiges von anderen Seiten*/ 
   .mercury-gif{
     transform: rotate(90deg);
     border-radius: 8px;
@@ -575,7 +573,6 @@ footer{
         height: 75vh; 
         width: 100%; 
         overflow: hidden;
-        border-radius: 0 0 20px 20px; 
         img{
             width: 100%;
             margin-top: -5rem;
@@ -589,10 +586,10 @@ footer{
             display: grid;
             place-items: center;
             margin: -11rem 0 1rem 0;
-            z-index: 100000;
+            z-index: 1000;
             background: #1E1E1E;
             width: 100%;
-            border-radius: 20px;
+            border-radius: 30px;
             h1{
                 font-size: $main-title;
                 font-family: 'Playfair-Display';
@@ -621,8 +618,40 @@ footer{
                     }
                     p{
                         font-family: 'Poppins';
+                        font-weight: 300;
+                        margin-top: .8rem;
                         color: #BDBDBD;
                         font-size: $base-font-size;
+                        .tooltip-dark{
+                            color: #f9f9f9;
+                            cursor: pointer;
+                            position: relative;
+                            text-decoration: underline dashed 1.5px #BDBDBD;
+                            text-underline-offset: 4px;
+                            .tip{
+                                visibility: hidden;
+                                width: 200px;
+                                background-color: #121212;
+                                color: #fff;
+                                text-align: center;
+                                border-radius: 15px;
+                                padding: 11px 15px 11px 15px;
+                                position: absolute;
+                                display: inline-block;
+                                bottom: 120%;
+                                left: 50%;
+                                margin-left: -110px;
+                                opacity: 0;
+                                z-index: 1000;
+                                transform: translate3d(0,10px,0);
+                                transition: all .35s ease-in-out;
+                            }
+                            .tip.active{
+                                visibility: visible;
+                                opacity: 1;
+                                transform: translate3d(0,0px,0);
+                            }
+                        }
                     }
                 }
             }

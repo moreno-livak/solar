@@ -41,6 +41,27 @@
     } 
   }
 
+  .header{
+    .quik-facts-planet{
+        padding: 0 $left-margin 0 $left-margin;
+        .big-wrapper{
+            h1{
+                font-size: $main-title;
+            }
+            .wrapper{
+                .quik-fact{
+                    p.number{
+                        font-size: $h1;
+                    }
+                    p{
+                        font-size: $base-font-size;
+                    }
+                }
+            }
+        }
+    }
+  }
+
 
   /*Quik-Facts*/
   section.quik-facts{
@@ -81,13 +102,7 @@
       /*Tabs*/
     .struggle{
       margin-top: 2rem;
-      background: #242230;
       width: 26.9rem;
-      border-radius: 10px;
-      ul{
-          display: flex;
-          padding: 0.7rem;
-      }
     }
     .tabs .trigger{
       font-size: $base-font-size;
@@ -193,13 +208,7 @@
 
     .struggle{
       margin-top: 2rem;
-      background: #242230;
-      width: 23.85rem;
-      border-radius: 10px;
-      ul{
-          display: flex;
-          padding: 0.7rem;
-      }
+      width: 24.1rem;
     }
   }
   .more{
@@ -239,7 +248,7 @@
       flex-direction: column;
       justify-content: right;
       align-items: right;
-      background-color: #242230;
+      background-color: #1E1E1E;
       border-radius: 10px;
       display: none;
       .closeMenu{
@@ -256,7 +265,7 @@
         }
       }
       .menu-vl{
-        border-bottom: solid #38364c 2.2px;
+        border-bottom: solid #2C2C2C 2.2px;
         display: block;
         margin: .3rem 0rem .3rem 4rem;
         width: 3rem;
@@ -284,7 +293,7 @@
           cursor: pointer;
           .burger{
            &:hover{
-              background-color: #242230;
+              background-color: #1E1E1E;
               border-radius: 9px;          
             }
           }   
@@ -314,15 +323,13 @@
       margin-top: -.4rem;
     }
     div.content{
-        background: #242230;
-        border-radius: 10px;
         display: block;
         padding: 1.5rem 0rem 1rem 1.5rem;
         img{
           height: 16rem;
         }
         .vl{
-          border-top: 3.5px solid #383647;
+          border-top: 3.3px solid #2C2C2C;
           border-left: none;
           margin: 1rem 0;
           width: 6rem;
@@ -338,9 +345,6 @@
       display: inline-block;
       .struggle{
         margin-top: -.5rem;
-        background: #242230;
-        width: 23.9rem;
-        border-radius: 10px;
       }
       .content.active{
         display: block;
@@ -353,13 +357,9 @@
       width: 100%;
     }
     .dropdown .content.active{
-        display: block;
-        border: 2px solid #242230;
-        background: #18171F;
         font-size: $base-font-size;
-        border-radius: 0 0 10px 10px;
-        padding: .5rem .7rem .5rem 1.5rem;
-        margin-top: -1px;
+        padding: .5rem 0rem .5rem 1.5rem;
+        margin-top: .5rem;
     }
     .more{
       h1{
@@ -466,8 +466,6 @@
       font-size: $base-font-size;
     }
     div.content{
-        background: #242230;
-        border-radius: 10px;
         display: block;
         padding: 1rem 0rem .7rem 1rem;
         img{
@@ -485,11 +483,9 @@
     .tabs {
       display: inline-block;
       .struggle{
-        margin-top: -.5rem;
+        margin-top: -1rem;
         margin-bottom: -.2rem;
-        background: #242230;
         width: 100%;
-        border-radius: 10px;
         ul{
           display: flex;
           justify-content: center;
@@ -514,12 +510,8 @@
     }
     .dropdown .content.active{
         display: block;
-        border: 2px solid #242230;
-        background: #18171F;
         font-size: $base-font-size;
-        border-radius: 0 0 10px 10px;
         padding: 1rem 0rem .5rem 1.5rem;
-        margin-top: -1px;
     }
   }
 
@@ -559,9 +551,7 @@
   .tabs{
     .struggle{
       margin: 2rem 0 0 0;
-      background: #242230;
       width: 50rem;
-      border-radius: 10px;
       ul{
           display: flex;
           justify-content: space-evenly;
@@ -667,8 +657,6 @@
       text-align: left;
     }
     div.content{
-        background: #242230;
-        border-radius: 10px;
         display: block;
         padding: .7rem .7rem .7rem .7rem;
         img{
@@ -683,8 +671,6 @@
     .tabs{
       .struggle{
         margin: -1rem 0 0 0;
-        background: #242230;
-        border-radius: 10px;
         ul{
             display: flex;
             justify-content: center;
@@ -701,12 +687,8 @@
       }
       .content.active{
         display: block;
-        border: 2px solid #242230;
-        background: #18171F;
         font-size: $base-font-size;
-        border-radius: 0 0 10px 10px;
         padding: .5rem 1rem .5rem 1rem;
-        margin-top: -1px;
     }
     } 
   }
@@ -796,8 +778,6 @@
       text-align: left;
     }
     div.content{
-        background: #242230;
-        border-radius: 10px;
         display: block;
         padding: .7rem .7rem .7rem .7rem;
         img{
@@ -854,8 +834,6 @@
       text-align: left;
     }
     div.content{
-        background: #242230;
-        border-radius: 10px;
         display: block;
         padding: .7rem .7rem .7rem .7rem;
         img{

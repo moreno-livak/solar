@@ -25,8 +25,8 @@
 
 html.is-animating .transition-fade {
   opacity: 0;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
 }
 
 /*Scrollbar*/
@@ -152,7 +152,7 @@ header .left {
 
 header .left h1 {
   font-family: 'Playfair+Display';
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   width: 10em;
 }
 
@@ -249,7 +249,7 @@ section.orbit {
 }
 
 section.orbit h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-family: 'Playfair';
   font-weight: bold;
 }
@@ -304,7 +304,7 @@ section.orbit div.content.GIF-Content {
 }
 
 section.orbit h2 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-family: 'Playfair';
   font-weight: bold;
   margin-top: 4rem;
@@ -518,11 +518,11 @@ iframe {
 
 /*Planeten Erkunden*/
 .more {
-  margin: -1.5rem 9rem 4rem 9rem;
+  margin: -2.5rem 9rem 4rem 9rem;
 }
 
 .more h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-family: 'Playfair';
   font-weight: bold;
 }
@@ -645,7 +645,6 @@ footer div a:hover:before {
   height: 75vh;
   width: 100%;
   overflow: hidden;
-  border-radius: 0 0 20px 20px;
 }
 
 .header .image-header img {
@@ -665,14 +664,14 @@ footer div a:hover:before {
   display: grid;
   place-items: center;
   margin: -11rem 0 1rem 0;
-  z-index: 100000;
+  z-index: 1000;
   background: #1E1E1E;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .header .quik-facts-planet .big-wrapper h1 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
   font-family: 'Playfair-Display';
   margin: 2.5rem 1rem 2.5rem 1rem;
 }
@@ -705,7 +704,7 @@ footer div a:hover:before {
 
 .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p.number {
   font-family: 'Playfair';
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #ffffff;
   margin: 1rem 1.5rem 0 1.5rem;
@@ -713,8 +712,47 @@ footer div a:hover:before {
 
 .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p {
   font-family: 'Poppins';
+  font-weight: 300;
+  margin-top: .8rem;
   color: #BDBDBD;
   font-size: 1.1rem;
+}
+
+.header .quik-facts-planet .big-wrapper .wrapper .quik-fact p .tooltip-dark {
+  color: #f9f9f9;
+  cursor: pointer;
+  position: relative;
+  -webkit-text-decoration: underline dashed 1.5px #BDBDBD;
+          text-decoration: underline dashed 1.5px #BDBDBD;
+  text-underline-offset: 4px;
+}
+
+.header .quik-facts-planet .big-wrapper .wrapper .quik-fact p .tooltip-dark .tip {
+  visibility: hidden;
+  width: 200px;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 11px 15px 11px 15px;
+  position: absolute;
+  display: inline-block;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -110px;
+  opacity: 0;
+  z-index: 1000;
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0);
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.header .quik-facts-planet .big-wrapper .wrapper .quik-fact p .tooltip-dark .tip.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
 }
 
 /*Media Queries*/
@@ -742,6 +780,18 @@ footer div a:hover:before {
   header img {
     margin-top: 4em;
     height: 36rem;
+  }
+  .header .quik-facts-planet {
+    padding: 0 14rem 0 14rem;
+  }
+  .header .quik-facts-planet .big-wrapper h1 {
+    font-size: 3.7rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p.number {
+    font-size: 2.9rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p {
+    font-size: 1.2rem;
   }
   /*Quik-Facts*/
   section.quik-facts {
@@ -772,15 +822,7 @@ footer div a:hover:before {
   }
   section.orbit .struggle {
     margin-top: 2rem;
-    background: #242230;
     width: 26.9rem;
-    border-radius: 10px;
-  }
-  section.orbit .struggle ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0.7rem;
   }
   section.orbit .tabs .trigger {
     font-size: 1.2rem;
@@ -864,15 +906,7 @@ footer div a:hover:before {
   }
   section.orbit .struggle {
     margin-top: 2rem;
-    background: #242230;
-    width: 23.85rem;
-    border-radius: 10px;
-  }
-  section.orbit .struggle ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0.7rem;
+    width: 24.1rem;
   }
   .more {
     margin: 3rem 5rem 4rem 5rem;
@@ -916,7 +950,7 @@ footer div a:hover:before {
     -webkit-box-align: right;
         -ms-flex-align: right;
             align-items: right;
-    background-color: #242230;
+    background-color: #1E1E1E;
     border-radius: 10px;
     display: none;
   }
@@ -935,7 +969,7 @@ footer div a:hover:before {
     color: #45415E;
   }
   nav .mainMenu .menu-vl {
-    border-bottom: solid #38364c 2.2px;
+    border-bottom: solid #2C2C2C 2.2px;
     display: block;
     margin: .3rem 0rem .3rem 4rem;
     width: 3rem;
@@ -963,7 +997,7 @@ footer div a:hover:before {
     cursor: pointer;
   }
   nav .second-nav .openMenu .burger:hover {
-    background-color: #242230;
+    background-color: #1E1E1E;
     border-radius: 9px;
   }
   section.quik-facts {
@@ -977,7 +1011,7 @@ footer div a:hover:before {
     text-align: left;
   }
   section.orbit h2 {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-family: 'Playfair';
     font-weight: bold;
     margin-top: 3.9rem;
@@ -988,8 +1022,6 @@ footer div a:hover:before {
     margin-top: -.4rem;
   }
   section.orbit div.content {
-    background: #242230;
-    border-radius: 10px;
     display: block;
     padding: 1.5rem 0rem 1rem 1.5rem;
   }
@@ -997,7 +1029,7 @@ footer div a:hover:before {
     height: 16rem;
   }
   section.orbit div.content .vl {
-    border-top: 3.5px solid #383647;
+    border-top: 3.3px solid #2C2C2C;
     border-left: none;
     margin: 1rem 0;
     width: 6rem;
@@ -1013,9 +1045,6 @@ footer div a:hover:before {
   }
   section.orbit .tabs .struggle {
     margin-top: -.5rem;
-    background: #242230;
-    width: 23.9rem;
-    border-radius: 10px;
   }
   section.orbit .tabs .content.active {
     display: block;
@@ -1025,13 +1054,9 @@ footer div a:hover:before {
     width: 100%;
   }
   section.orbit .dropdown .content.active {
-    display: block;
-    border: 2px solid #242230;
-    background: #18171F;
     font-size: 1.1rem;
-    border-radius: 0 0 10px 10px;
-    padding: .5rem .7rem .5rem 1.5rem;
-    margin-top: -1px;
+    padding: .5rem 0rem .5rem 1.5rem;
+    margin-top: .5rem;
   }
   section.orbit .more h1 {
     text-align: center;
@@ -1126,8 +1151,6 @@ footer div a:hover:before {
     font-size: 1rem;
   }
   section.orbit div.content {
-    background: #242230;
-    border-radius: 10px;
     display: block;
     padding: 1rem 0rem .7rem 1rem;
   }
@@ -1145,11 +1168,9 @@ footer div a:hover:before {
     display: inline-block;
   }
   section.orbit .tabs .struggle {
-    margin-top: -.5rem;
+    margin-top: -1rem;
     margin-bottom: -.2rem;
-    background: #242230;
     width: 100%;
-    border-radius: 10px;
   }
   section.orbit .tabs .struggle ul {
     display: -webkit-box;
@@ -1175,12 +1196,8 @@ footer div a:hover:before {
   }
   section.orbit .dropdown .content.active {
     display: block;
-    border: 2px solid #242230;
-    background: #18171F;
     font-size: 1rem;
-    border-radius: 0 0 10px 10px;
     padding: 1rem 0rem .5rem 1.5rem;
-    margin-top: -1px;
   }
   .more {
     margin: 3rem 3rem 4rem 3rem;
@@ -1214,9 +1231,7 @@ footer div a:hover:before {
   }
   .tabs .struggle {
     margin: 2rem 0 0 0;
-    background: #242230;
     width: 50rem;
-    border-radius: 10px;
   }
   .tabs .struggle ul {
     display: -webkit-box;
@@ -1309,8 +1324,6 @@ footer div a:hover:before {
     text-align: left;
   }
   section.orbit div.content {
-    background: #242230;
-    border-radius: 10px;
     display: block;
     padding: .7rem .7rem .7rem .7rem;
   }
@@ -1324,8 +1337,6 @@ footer div a:hover:before {
   }
   section.orbit .tabs .struggle {
     margin: -1rem 0 0 0;
-    background: #242230;
-    border-radius: 10px;
   }
   section.orbit .tabs .struggle ul {
     display: -webkit-box;
@@ -1344,12 +1355,8 @@ footer div a:hover:before {
   }
   section.orbit .dropdown .content.active {
     display: block;
-    border: 2px solid #242230;
-    background: #18171F;
     font-size: 0.95rem;
-    border-radius: 0 0 10px 10px;
     padding: .5rem 1rem .5rem 1rem;
-    margin-top: -1px;
   }
   .more {
     margin: 3rem 1.5rem 4rem 1.5rem;
@@ -1418,8 +1425,6 @@ footer div a:hover:before {
     text-align: left;
   }
   section.orbit div.content {
-    background: #242230;
-    border-radius: 10px;
     display: block;
     padding: .7rem .7rem .7rem .7rem;
   }
@@ -1463,8 +1468,6 @@ footer div a:hover:before {
     text-align: left;
   }
   section.orbit div.content {
-    background: #242230;
-    border-radius: 10px;
     display: block;
     padding: .7rem .7rem .7rem .7rem;
   }
