@@ -1,4 +1,3 @@
-const swup = new Swup();
 
 // tooltip
 const tooltips = document.querySelectorAll('.tooltip');
