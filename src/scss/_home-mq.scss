@@ -581,6 +581,10 @@
   $h1: 2.3rem;
   $h2: 2rem;
 
+  body{
+    overflow-x: hidden;
+  }
+
   nav{
     .mainMenu{
       margin: 1rem $left-margin 0 0;
@@ -661,6 +665,9 @@
         padding: .7rem .7rem .7rem .7rem;
         img{
           height: 9rem;
+        }
+        .vl{
+          margin-left: .3rem;
         }
         p{
           font-size: $base-font-size;

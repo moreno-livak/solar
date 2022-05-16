@@ -1254,6 +1254,9 @@ footer div a:hover:before {
 }
 
 @media only screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   nav .mainMenu {
     margin: 1rem 1.5rem 0 0;
   }
@@ -1329,6 +1332,9 @@ footer div a:hover:before {
   }
   section.orbit div.content img {
     height: 9rem;
+  }
+  section.orbit div.content .vl {
+    margin-left: .3rem;
   }
   section.orbit div.content p {
     font-size: 0.95rem;
