@@ -1,11 +1,6 @@
 "use strict";
 
-var _swup = _interopRequireDefault(require("swup"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var swup = new _swup["default"](); // tooltip
-
+// tooltip
 var tooltips = document.querySelectorAll('.tooltip');
 tooltips.forEach(function (tooltip) {
   var instance = new Tooltip(tooltip);
