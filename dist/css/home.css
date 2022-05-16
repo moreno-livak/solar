@@ -260,8 +260,8 @@ section.orbit .top {
 
 section.orbit p {
   font-size: 1.1rem;
-  text-align: left;
-  color: #F9F9F9;
+  text-align: justify;
+  color: #f6f5f5;
   font-weight: 300;
   margin-bottom: 2rem;
   margin-top: -.7rem;
@@ -291,7 +291,7 @@ section.orbit div.content p {
   font-size: 1.1rem;
   text-align: justify;
   font-weight: 300;
-  color: #F9F9F9;
+  color: #f6f5f5;
   margin: auto 0 auto 0;
 }
 
@@ -311,9 +311,12 @@ section.orbit h2 {
 }
 
 section.orbit .tooltip-dark {
-  color: #4884F6;
+  color: #f9f9f9;
   cursor: pointer;
   position: relative;
+  -webkit-text-decoration: underline dashed 1.5px #BDBDBD;
+          text-decoration: underline dashed 1.5px #BDBDBD;
+  text-underline-offset: 4px;
 }
 
 section.orbit .tooltip-dark .tip {
@@ -330,20 +333,27 @@ section.orbit .tooltip-dark .tip {
   left: 50%;
   margin-left: -110px;
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
   z-index: 1000;
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0);
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 section.orbit .tooltip-dark .tip.active {
   visibility: visible;
   opacity: 1;
+  -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
 }
 
 section.orbit .tooltip-light {
-  color: #4884F6;
+  color: #ffffff;
   cursor: pointer;
   position: relative;
+  -webkit-text-decoration: underline dashed 1.5px #BDBDBD;
+          text-decoration: underline dashed 1.5px #BDBDBD;
+  text-underline-offset: 4px;
 }
 
 section.orbit .tooltip-light .tip {
@@ -360,14 +370,18 @@ section.orbit .tooltip-light .tip {
   left: 50%;
   margin-left: -125px;
   opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   z-index: 1000;
+  -webkit-transform: translate3d(0, 10px, 0);
+          transform: translate3d(0, 10px, 0);
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 section.orbit .tooltip-light .tip.active {
   visibility: visible;
   opacity: 1;
+  -webkit-transform: translate3d(0, 0px, 0);
+          transform: translate3d(0, 0px, 0);
 }
 
 section.orbit .struggle {

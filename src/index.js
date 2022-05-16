@@ -61,9 +61,12 @@ function init() {
   }
 
   if (document.querySelector('.dropdown')){
-    const dropdowns = document.querySelector('.dropdown');
-    const instance =  new Dropdown(dropdowns);
-    instance.init();
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      const instance =  new Dropdown(dropdown);
+      instance.init();
+    })
   }
 
   if (document.querySelector('.mainMenu')){
