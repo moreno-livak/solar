@@ -10,7 +10,7 @@ tooltips.forEach(function (tooltip) {
 var tabs = new Tabs(document.querySelector('.tabs'));
 tabs.init(); // dropdown
 
-var dropdowns = document.querySelectorAll('.dropdown');
+var dropdown = document.querySelectorAll('.dropdown');
 dropdowns.forEach(function (dropdown) {
   var instance = new Dropdown(dropdown);
   instance.init();
@@ -33,7 +33,7 @@ function close() {
 
 
 function init() {
-  if (document.querySelector('.tooltip')) {
+  if (document.querySelectorAll('.tooltip')) {
     var _tooltips = document.querySelectorAll('.tooltip');
 
     _tooltips.forEach(function (tooltip) {
@@ -48,11 +48,13 @@ function init() {
     _tabs.init();
   }
 
-  if (document.querySelector('.dropdown')) {
-    var _dropdowns = document.querySelector('.dropdown');
+  if (document.querySelectorAll('.dropdown')) {
+    var _dropdowns = document.querySelectorAll('.dropdown');
 
-    var instance = new Dropdown(_dropdowns);
-    instance.init();
+    _dropdowns.forEach(function (dropdown) {
+      var instance = new Dropdown(dropdown);
+      instance.init();
+    });
   }
 
   if (document.querySelector('.mainMenu')) {

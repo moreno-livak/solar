@@ -822,7 +822,10 @@ footer div a:hover:before {
   }
   section.orbit .struggle {
     margin-top: 2rem;
-    width: 26.9rem;
+    width: 27.1rem;
+  }
+  section.orbit .struggle.merkur {
+    width: 27.6rem;
   }
   section.orbit .tabs .trigger {
     font-size: 1.2rem;

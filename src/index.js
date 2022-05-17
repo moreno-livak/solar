@@ -16,7 +16,7 @@ tabs.init();
 
 
 // dropdown
-const dropdowns = document.querySelectorAll('.dropdown');
+const dropdown = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {
   const instance =  new Dropdown(dropdown);
@@ -46,7 +46,7 @@ function close() {
 
 // Swup Reload Function
 function init() {
-  if (document.querySelector('.tooltip')) {
+  if (document.querySelectorAll('.tooltip')) {
     const tooltips = document.querySelectorAll('.tooltip');
 
     tooltips.forEach(tooltip => {
@@ -60,7 +60,7 @@ function init() {
     tabs.init();
   }
 
-  if (document.querySelector('.dropdown')){
+  if (document.querySelectorAll('.dropdown')){
     const dropdowns = document.querySelectorAll('.dropdown');
 
     dropdowns.forEach(dropdown => {
