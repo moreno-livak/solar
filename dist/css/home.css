@@ -961,7 +961,7 @@ footer div.wrapper .links a:hover {
     width: 8rem;
     top: 0;
     right: 0;
-    z-index: 999;
+    z-index: 99999999;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -987,9 +987,6 @@ footer div.wrapper .links a:hover {
     margin-bottom: 2rem;
     cursor: pointer;
   }
-  nav .mainMenu .closeMenu .exit:hover {
-    color: #45415E;
-  }
   nav .mainMenu .menu-vl {
     border-bottom: solid #2C2C2C 2.2px;
     display: block;
@@ -1011,16 +1008,18 @@ footer div.wrapper .links a:hover {
     margin: .6rem 5rem .7rem 5rem;
   }
   nav .second-nav li a {
-    margin-top: .4rem;
+    margin-top: .6rem;
+    margin-bottom: 1.3rem;
   }
   nav .second-nav .openMenu {
     display: block;
-    margin-top: -.35em;
+    margin: auto 0 auto;
     cursor: pointer;
   }
-  nav .second-nav .openMenu .burger:hover {
-    background-color: #1E1E1E;
-    border-radius: 9px;
+  nav .second-nav .openMenu .burger {
+    margin-bottom: .3rem;
+    margin-right: .6rem;
+    height: 1.2rem;
   }
   section.quik-facts {
     margin: 7rem 5rem 6rem 5rem;
@@ -1138,7 +1137,7 @@ footer div.wrapper .links a:hover {
 
 @media only screen and (max-width: 730px) {
   nav .mainMenu {
-    margin: 1rem 3rem 0 0;
+    margin: 1.3rem 3rem 0 0;
     height: 29.7rem;
     width: 7.8rem;
   }
@@ -1154,9 +1153,10 @@ footer div.wrapper .links a:hover {
   nav .second-nav a {
     font-size: 1rem;
     margin-bottom: 1rem;
+    margin-top: .6rem;
   }
-  nav .second-nav .burger {
-    height: 2.6rem;
+  nav .second-nav .openMenu .burger {
+    height: 1.2rem;
   }
   header .left {
     margin-top: 6rem;
@@ -1335,10 +1335,11 @@ footer div.wrapper .links a:hover {
     margin: 0.4rem 1.5rem 0.8rem 1.5rem;
   }
   nav .second-nav a {
-    margin-bottom: .6rem;
+    margin-bottom: .2rem;
   }
-  nav .second-nav .burger {
-    height: 2.5rem;
+  nav .second-nav .openMenu .burger {
+    height: 1rem;
+    margin-right: .7rem;
   }
   header .left {
     margin-top: 6rem;

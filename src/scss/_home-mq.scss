@@ -281,7 +281,7 @@
       width: 8rem;
       top: 0;
       right: 0;
-      z-index: 999;
+      z-index: 99999999;
       flex-direction: column;
       justify-content: right;
       align-items: right;
@@ -295,11 +295,6 @@
         right: 1rem;
         margin-bottom: 2rem;
         cursor: pointer;
-        .exit{
-          &:hover{
-           color: #45415E;
-          }
-        }
       }
       .menu-vl{
         border-bottom: solid #2C2C2C 2.2px;
@@ -321,19 +316,19 @@
         margin: .6rem 5rem .7rem 5rem;
         li{
           a{
-            margin-top: .4rem;
+            margin-top: .6rem;
+            margin-bottom: 1.3rem;
           }
         }
         .openMenu{
           display: block;
-          margin-top: -.35em;
+          margin: auto 0 auto;
           cursor: pointer;
           .burger{
-           &:hover{
-              background-color: #1E1E1E;
-              border-radius: 9px;          
-            }
-          }   
+            margin-bottom: .3rem;
+            margin-right: .6rem;
+            height: 1.2rem;
+          } 
         }
     } 
   }
@@ -469,7 +464,7 @@
 
   nav{
     .mainMenu{
-      margin: 1rem $left-margin 0 0;
+      margin: 1.3rem $left-margin 0 0;
       a{
         font-size: $base-font-size;
       }
@@ -484,9 +479,12 @@
         a{
           font-size: $base-font-size;
           margin-bottom: 1rem;
+          margin-top: .6rem;
         }
-        .burger{
-          height: 2.6rem;
+        .openMenu{
+          .burger{
+            height: 1.2rem;
+          }
         }
     }
   }
@@ -694,10 +692,13 @@
     .second-nav{
         margin: .4rem $left-margin .8rem $left-margin;
         a{
-          margin-bottom: .6rem;
+          margin-bottom: .2rem;
         }
-        .burger{
-          height: 2.5rem;
+        .openMenu{
+          .burger{
+            height: 1rem;
+            margin-right: .7rem;
+          }
         }
     }
   }
