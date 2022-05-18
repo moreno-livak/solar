@@ -1518,8 +1518,8 @@ footer div.wrapper .links a:hover {
 
 @media only screen and (max-width: 392px) {
   header .left h1 {
-    font-size: 2.25rem;
-    width: 14.5rem;
+    font-size: 2.1rem;
+    width: 13.5rem;
   }
   header .left p {
     width: 14.5rem;
@@ -1537,11 +1537,11 @@ footer div.wrapper .links a:hover {
     margin: 2rem 1.5rem 2rem 1.5rem;
   }
   section.orbit h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin: 2rem 0 1rem 0;
   }
   section.orbit h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-top: 4rem;
     margin-bottom: 1rem;
   }
@@ -1562,7 +1562,7 @@ footer div.wrapper .links a:hover {
     text-align: left;
   }
   .more h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 4.5rem;
   }
   .more .planets {

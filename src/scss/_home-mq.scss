@@ -903,15 +903,15 @@
 
 @media only screen and (max-width: 392px){
   $left-margin: 1.5rem;
-  $main-title: 2.25rem;
-  $h1: 2rem;
-  $h2: 1.8rem;
+  $main-title: 2.1rem;
+  $h1: 1.9rem;
+  $h2: 1.7rem;
 
   header{
     .left{
       h1{
         font-size: $main-title;
-        width: 14.5rem;
+        width: 13.5rem;
       }
       p{
         width: 14.5rem;
