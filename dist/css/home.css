@@ -580,11 +580,15 @@ footer {
 }
 
 footer div.wrapper {
-  margin: 3.5rem 9rem 3.5rem 9rem;
+  margin: 2.5rem 9rem 3.5rem 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer div.wrapper img {
   height: 3.8rem;
+  margin: 2rem 2rem 0 0;
 }
 
 footer div.wrapper h3 {
@@ -599,7 +603,7 @@ footer div.wrapper .links {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 footer div.wrapper .links a {
@@ -679,7 +683,6 @@ footer div.wrapper .links a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 2rem 2rem 2rem 2rem;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -766,6 +769,9 @@ footer div.wrapper .links a:hover {
   header .left p {
     font-size: 1.2rem;
   }
+  header .left .cta {
+    width: 20rem;
+  }
   header .left .cta p {
     font-size: 1.2rem;
   }
@@ -817,7 +823,7 @@ footer div.wrapper .links a:hover {
     width: 27.1rem;
   }
   section.orbit .struggle.merkur {
-    width: 27.6rem;
+    width: 27.7rem;
   }
   section.orbit .tabs .trigger {
     font-size: 1.2rem;
@@ -834,11 +840,17 @@ footer div.wrapper .links a:hover {
   .more h1 {
     font-size: 2.7rem;
   }
-  footer {
-    margin: 14rem 0 3rem 0;
+  footer div.wrapper {
+    margin: 3.5rem 14rem 3.5rem 14rem;
   }
-  footer div a {
-    font-size: 1.2rem;
+  footer div.wrapper img {
+    height: 4rem;
+  }
+  footer div.wrapper h3 {
+    font-size: 1.45rem;
+  }
+  footer div.wrapper .links a {
+    font-size: 1rem;
   }
 }
 
@@ -895,6 +907,21 @@ footer div.wrapper .links a:hover {
   header .left .cta {
     width: 18.5rem;
   }
+  .header .image-header {
+    height: 70vh;
+  }
+  .header .quik-facts-planet {
+    padding: 0 5rem 0 5rem;
+  }
+  .header .quik-facts-planet .big-wrapper h1 {
+    font-size: 3.4rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p.number {
+    font-size: 2.5rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p {
+    font-size: 1.1rem;
+  }
   /*Orbitale Ebene*/
   section.orbit {
     margin: 9rem 5rem 9rem 5rem;
@@ -906,8 +933,8 @@ footer div.wrapper .links a:hover {
   .more {
     margin: 3rem 5rem 4rem 5rem;
   }
-  footer {
-    margin: 5rem 0 3rem 0;
+  footer div.wrapper {
+    margin: 3.3rem 5rem 3.3rem 5rem;
   }
 }
 
@@ -1068,6 +1095,27 @@ footer div.wrapper .links a:hover {
   section.quik-facts .quik-fact {
     margin-top: 1rem;
   }
+  .header .image-header {
+    height: 65vh;
+  }
+  .header .quik-facts-planet .big-wrapper h1 {
+    font-size: 3.4rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p.number {
+    font-size: 2.5rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 790px) {
@@ -1118,6 +1166,24 @@ footer div.wrapper .links a:hover {
     width: 20rem;
     font-size: 3.2rem;
   }
+  .header .image-header {
+    height: 70vh;
+  }
+  .header .quik-facts-planet {
+    padding: 0 3rem 0 3rem;
+  }
+  .header .quik-facts-planet .big-wrapper {
+    margin: -18rem 0 1rem 0;
+  }
+  .header .quik-facts-planet .big-wrapper h1 {
+    font-size: 3.2rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p.number {
+    font-size: 2.2rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p {
+    font-size: 1rem;
+  }
   section.quik-facts {
     margin: 7rem 3rem 5rem 3rem;
   }
@@ -1134,11 +1200,11 @@ footer div.wrapper .links a:hover {
     margin: 2rem 3rem 2rem 3rem;
   }
   section.orbit h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     margin: 4rem 0 1.5rem 0;
   }
   section.orbit h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
   }
@@ -1150,6 +1216,9 @@ footer div.wrapper .links a:hover {
     padding: 1rem 0rem .7rem 1rem;
   }
   section.orbit div.content img {
+    height: 10rem;
+  }
+  section.orbit div.content .video {
     height: 10rem;
   }
   section.orbit div.content .vl {
@@ -1199,31 +1268,19 @@ footer div.wrapper .links a:hover {
     font-size: 1rem;
   }
   .more h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     margin-top: 7.5rem;
   }
-  footer {
-    margin: 3rem 0 3rem 0;
+  footer div.wrapper {
+    margin: 1.3rem 3rem 3.3rem 3rem;
+    display: block;
   }
-  footer div a {
+  footer div.wrapper .links a {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 556px) {
-  footer {
-    margin: 9rem 0 3rem 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  footer div a {
-    font-size: 1.1rem;
-  }
-  footer div .portfolio {
-    display: none;
-  }
   .tabs .struggle {
     margin: 2rem 0 0 0;
     width: 50rem;
@@ -1367,14 +1424,22 @@ footer div.wrapper .links a:hover {
     font-size: 2.3rem;
     margin-top: 5.5rem;
   }
-  footer {
-    margin: 1.5rem 0 0 0;
+  footer div.wrapper {
+    margin: 1rem 1.5rem 3.3rem 1.5rem;
+    display: block;
   }
-  footer div {
-    margin: 1.5rem 0 1.5rem 0;
+  footer div.wrapper .links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  footer div a {
-    font-size: 0.95rem;
+  footer div.wrapper .links a {
+    font-size: .9rem;
+  }
+  footer div.wrapper h3 {
+    font-size: 1.2rem;
+  }
+  footer div.wrapper img {
+    height: 3.5rem;
   }
 }
 
@@ -1433,6 +1498,9 @@ footer div.wrapper .links a:hover {
   section.orbit div.content img {
     height: 7rem;
   }
+  section.orbit div.content .video {
+    height: 7rem;
+  }
   section.orbit div.content p {
     text-align: left;
   }
@@ -1446,8 +1514,15 @@ footer div.wrapper .links a:hover {
     -ms-grid-rows: (1fr)[7];
         grid-template-rows: repeat(7, 1fr);
   }
-  footer div {
-    margin: 2 4rem 2 4rem;
+  footer div.wrapper {
+    margin: 1rem 1.5rem 3.3rem 1.5rem;
+  }
+  footer div.wrapper .links {
+    display: block;
+  }
+  footer div.wrapper .links a {
+    display: block;
+    font-size: .9rem;
   }
 }
 

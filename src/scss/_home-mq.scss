@@ -30,6 +30,7 @@
             font-size: $base-font-size;
         }
         .cta{
+          width: 20rem;
             p{
                 font-size: $base-font-size;
             }
@@ -105,7 +106,7 @@
       width: 27.1rem;
     }
     .struggle.merkur{
-      width: 27.6rem;
+      width: 27.7rem;
   }
     .tabs .trigger{
       font-size: $base-font-size;
@@ -129,11 +130,19 @@
   }
 
   footer{
-    margin: $left-margin 0 3rem 0;
-    div{
+    div.wrapper{
+      margin: 3.5rem $left-margin 3.5rem $left-margin;
+      img{
+        height: 4rem;
+    }
+      h3{
+        font-size: 1.45rem;
+      }
+      .links{
         a{
-            font-size: $base-font-size;
+          font-size: 1rem;
         }
+      }
     }
   }
 }
@@ -204,6 +213,29 @@
         }
     }   
   }
+  .header{
+    .image-header{
+      height: 70vh; 
+  }
+    .quik-facts-planet{
+        padding: 0 $left-margin 0 $left-margin;
+        .big-wrapper{
+            h1{
+                font-size: $main-title;
+            }
+            .wrapper{
+                .quik-fact{
+                    p.number{
+                        font-size: $h1;
+                    }
+                    p{
+                        font-size: $base-font-size;
+                    }
+                }
+            }
+        }
+    }
+  }
 
   /*Orbitale Ebene*/
   section.orbit{
@@ -219,7 +251,9 @@
   }
 
   footer{
-    margin: $left-margin 0 3rem 0;
+    div.wrapper{
+      margin: 3.3rem $left-margin 3.3rem $left-margin;
+    }
   }
 }
 
@@ -380,6 +414,30 @@
       margin-top: 1rem;
     }
   }
+  .header{
+    .image-header{
+      height: 65vh; 
+  }
+    .quik-facts-planet{
+        .big-wrapper{
+            h1{
+                font-size: $main-title;
+            }
+            .wrapper{
+              flex-flow: column;
+              justify-content: center;
+                .quik-fact{
+                    p.number{
+                        font-size: $h1;
+                    }
+                    p{
+                        font-size: $base-font-size;
+                    }
+                }
+            }
+        }
+    }
+  }
 }
 
 @media only screen and (max-width: 790px){
@@ -397,8 +455,8 @@
   $left-margin: 3rem;
   $base-font-size: 1rem;
   $main-title: 3.2rem;
-  $h1: 2.3rem;
-  $h2: 2rem;
+  $h1: 2.2rem;
+  $h2: 1.9rem;
 
   nav{
     .mainMenu{
@@ -440,6 +498,30 @@
       }
     }
   }
+  .header{
+    .image-header{
+      height: 70vh; 
+  }
+    .quik-facts-planet{
+        padding: 0 $left-margin 0 $left-margin;
+        .big-wrapper{
+          margin: -18rem 0 1rem 0;
+            h1{
+                font-size: $main-title;
+            }
+            .wrapper{
+                .quik-fact{
+                    p.number{
+                        font-size: $h1;
+                    }
+                    p{
+                        font-size: $base-font-size;
+                    }
+                }
+            }
+        }
+    }
+  }
 
   section.quik-facts{
     margin: 7rem $left-margin 5rem $left-margin;
@@ -472,6 +554,9 @@
         display: block;
         padding: 1rem 0rem .7rem 1rem;
         img{
+          height: 10rem;
+        }
+        .video{
           height: 10rem;
         }
         .vl{
@@ -528,29 +613,19 @@
   }
 
   footer{
-    margin: $left-margin 0 3rem 0;
-    div{
-      a{
-        font-size: $base-font-size;
+    div.wrapper{
+      margin: 1.3rem $left-margin 3.3rem $left-margin;
+      display: block;
+      .links{
+        a{
+          font-size: 1rem;
+        }
       }
     }
   }
 }
 
 @media only screen and (max-width: 556px){
-  footer{
-    margin: $left-margin 0 3rem 0;
-    justify-content: center;
-    text-align: center;
-    div{
-      a{
-        font-size: $base-font-size;
-      }
-      .portfolio{
-        display: none;
-      }
-    }
-  }
   .tabs{
     .struggle{
       margin: 2rem 0 0 0;
@@ -713,11 +788,20 @@
   }
 
   footer{
-    margin: $left-margin 0 0 0;
-    div{
-      margin: $left-margin 0 $left-margin 0;
-      a{
-        font-size: $base-font-size;
+    div.wrapper{
+      margin: 1rem $left-margin 3.3rem $left-margin;
+      display: block;
+      .links{
+        flex-wrap: wrap;
+        a{
+          font-size: .9rem;
+        }
+      }
+      h3{
+        font-size: 1.2rem;
+      }
+      img{
+        height: 3.5rem;
       }
     }
   }
@@ -794,6 +878,9 @@
         img{
           height: 7rem;
         }
+        .video{
+          height: 7rem;
+        }
         p{
           text-align: left;
         }
@@ -811,8 +898,15 @@
     }
   }
   footer{
-    div{
-      margin: 2 4rem 2 4rem;
+    div.wrapper{
+      margin: 1rem $left-margin 3.3rem $left-margin;
+      .links{
+        display: block;
+        a{
+          display: block;
+          font-size: .9rem;
+        }
+      }
     }
   }
 }

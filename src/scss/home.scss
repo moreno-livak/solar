@@ -519,9 +519,11 @@ footer{
     margin-top: 8rem;
     border-top: 1px #2C2C2C solid;
     div.wrapper{
-        margin: 3.5rem $left-margin 3.5rem $left-margin;
+        margin: 2.5rem $left-margin 3.5rem $left-margin;
+        display: flex;
         img{
             height: 3.8rem;
+            margin: 2rem 2rem 0 0;
         }
         h3{
             color: #FDB513;
@@ -530,7 +532,7 @@ footer{
         .links{
             display: flex;
             justify-content: flex-start;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             a{
                 margin-right: 1.1rem;
                 text-decoration: none;
@@ -598,7 +600,6 @@ footer{
             .wrapper{
                 display: flex;
                 margin: 2rem 2rem 2rem 2rem;
-                display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 .quik-fact{
