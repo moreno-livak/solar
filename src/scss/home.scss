@@ -34,14 +34,14 @@ html.is-animating .transition-fade {
 } // Dicke
 
 ::-webkit-scrollbar-track{
-    background-color: #242230;
+    background-color: #1e1e1e;
 } // Hintergrundfrabe
 
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
-    background-color:#312f3f;
+    background-color:#2c2c2c;
     &:hover{
-        background-color: #383647;
+        background-color: #353535;
     } 
 } // Thumb zum Scrollen
 
@@ -383,8 +383,9 @@ section.orbit{
 
 
     .link{
-        color: #4884F6;
-        text-decoration: none;
+        color: #ffffff;
+        text-decoration: underline solid 2px #BDBDBD;
+        text-underline-offset: 3px;
     }
 
 
@@ -512,46 +513,40 @@ iframe{
 
 
 
-
 /*Footer*/
+
 footer{
-    margin: $left-margin 0 3rem 0;
-    display: flex;
-    justify-content: space-around;
+    margin-top: 8rem;
     border-top: 1px #2C2C2C solid;
-    div{
-        margin: 3rem 4rem 0 4rem;
-        a{
-            margin: 0 2rem 0 2rem;
-            text-decoration: none;
-            color: #BDBDBD;
-            font-size: $base-font-size;
-            display: inline-block;
-            border: none;
-            position: relative;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            &:before, &:after {
-                position: absolute;
-                content: '';
-                border-bottom: 2px solid #BDBDBD;
-                border-radius: 0em;
-                bottom: .1em;
-                transition: transform .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    div.wrapper{
+        margin: 3.5rem $left-margin 3.5rem $left-margin;
+        img{
+            height: 3.8rem;
+        }
+        h3{
+            color: #FDB513;
+            font-size: 1.35rem;
+        }
+        .links{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 1.5rem;
+            a{
+                margin-right: 1.1rem;
+                text-decoration: none;
+                color: #BDBDBD;
+                font-size: .9rem;
             }
-        
-           &:before {
-                width: 0.01em;
-                margin-left: -.1em;
-                transform-origin: left;
+            a:hover{
+                text-decoration:underline 2px #BDBDBD;
+                text-underline-offset: 2px;
             }
-        
-            &:hover:before {
-                margin-left: 0em;
-                transform: scaleX(124);
-            }
+            
         }
     }
 }
+
+
 
 
 /*Sonstiges von anderen Seiten*/ 

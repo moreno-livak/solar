@@ -1,9 +1,9 @@
 @media only screen and (min-width: 1600px){
   $left-margin: 14rem;
   $base-font-size: 1.2rem;
-  $main-title: 3.7rem;
-  $h1: 2.9rem;
-  $h2: 2.5rem;
+  $main-title: 3.55rem;
+  $h1: 2.7rem;
+  $h2: 2.2rem;
 
 
   /*Navigation*/
@@ -577,7 +577,7 @@
 }
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width: 500px){
   $left-margin: 1.5rem;
   $base-font-size: .95rem;
   $main-title: 3rem;
@@ -596,7 +596,7 @@
       }
     }
     .second-nav{
-        margin: .4rem 90rem .8rem $left-margin;
+        margin: .4rem $left-margin .8rem $left-margin;
         a{
           margin-bottom: .6rem;
         }
