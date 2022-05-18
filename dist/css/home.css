@@ -1518,7 +1518,7 @@ footer div.wrapper .links a:hover {
 
 @media only screen and (max-width: 392px) {
   header .left h1 {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
     width: 14.5rem;
   }
   header .left p {
@@ -1583,7 +1583,7 @@ footer div.wrapper .links a:hover {
   }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 338px) {
   header .left h1 {
     font-size: 2rem;
     width: 12rem;
