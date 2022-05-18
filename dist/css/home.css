@@ -1517,6 +1517,12 @@ footer div.wrapper .links a:hover {
 }
 
 @media only screen and (max-width: 392px) {
+  body {
+    overflow: hidden;
+  }
+  header {
+    overflow: hidden;
+  }
   header .left h1 {
     font-size: 2.1rem;
     width: 15rem;
