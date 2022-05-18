@@ -907,11 +907,7 @@
   $h1: 1.9rem;
   $h2: 1.7rem;
 
-  body{
-    overflow: hidden;
-  }
   header{
-    overflow: hidden;
     .left{
       h1{
         font-size: $main-title;
