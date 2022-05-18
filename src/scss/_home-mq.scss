@@ -378,6 +378,15 @@
           text-align: justify;
         }
     }
+
+    div.content.GIF-Content{
+      padding: .4rem 0rem 1rem 1.5rem;
+    }
+
+    .mercury-gif{
+      margin: 0 1rem 0 .5rem;
+    }
+
     .tabs {
       display: inline-block;
       .struggle{
@@ -454,9 +463,9 @@
 @media only screen and (max-width: 730px){
   $left-margin: 3rem;
   $base-font-size: 1rem;
-  $main-title: 3.2rem;
-  $h1: 2.2rem;
-  $h2: 1.9rem;
+  $main-title: 3.1rem;
+  $h1: 2.1rem;
+  $h2: 1.75rem;
 
   nav{
     .mainMenu{
@@ -500,14 +509,18 @@
   }
   .header{
     .image-header{
-      height: 70vh; 
+      display: none;
   }
     .quik-facts-planet{
         padding: 0 $left-margin 0 $left-margin;
         .big-wrapper{
-          margin: -18rem 0 1rem 0;
+          margin: 5rem 0 2rem 0;
             h1{
                 font-size: $main-title;
+            }
+            .small-title{
+              font-size: .8rem;
+              font-weight: 500;
             }
             .wrapper{
                 .quik-fact{
@@ -566,7 +579,15 @@
           font-size: $base-font-size;
           margin-top: 0;
         }
-    }
+   }
+
+   div.content.GIF-Content{
+    padding: .4rem 0rem .7rem 1.15rem;
+  }
+
+  .mercury-gif{
+    margin: 0 1rem -.5rem 0.3rem;
+  }
 
     .tabs {
       display: inline-block;
@@ -754,6 +775,15 @@
           text-align: left;
         }
     }
+
+    div.content.GIF-Content{
+      padding: .3rem .5rem .7rem .7rem;
+    }
+  
+    .mercury-gif{
+      margin: 0 1rem -.5rem .5rem;
+    }
+
     .tabs{
       .struggle{
         margin: -1rem 0 0 0;
