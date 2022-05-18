@@ -588,12 +588,14 @@ footer div.wrapper {
 
 footer div.wrapper img {
   height: 3.8rem;
-  margin: 2rem 2rem 0 0;
+  margin: 1rem 2rem 0 0;
 }
 
 footer div.wrapper h3 {
   color: #FDB513;
   font-size: 1.35rem;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
 }
 
 footer div.wrapper .links {
@@ -603,7 +605,7 @@ footer div.wrapper .links {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 footer div.wrapper .links a {

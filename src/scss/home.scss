@@ -523,16 +523,18 @@ footer{
         display: flex;
         img{
             height: 3.8rem;
-            margin: 2rem 2rem 0 0;
+            margin: 1rem 2rem 0 0;
         }
         h3{
             color: #FDB513;
             font-size: 1.35rem;
+            margin-bottom: .5rem;
+            margin-top: 1rem;
         }
         .links{
             display: flex;
             justify-content: flex-start;
-            margin-top: 1rem;
+            margin-top: .5rem;
             a{
                 margin-right: 1.1rem;
                 text-decoration: none;
