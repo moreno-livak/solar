@@ -1367,6 +1367,25 @@ footer div.wrapper .links a:hover {
     font-size: 0.95rem;
     margin-left: .5rem;
   }
+  .header .quik-facts-planet {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .header .quik-facts-planet .big-wrapper {
+    margin: 3rem 0 3rem 0;
+  }
+  .header .quik-facts-planet .big-wrapper h1 {
+    font-size: 3rem;
+  }
+  .header .quik-facts-planet .big-wrapper .small-title {
+    font-size: .8rem;
+    font-weight: 500;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p.number {
+    font-size: 2.3rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p {
+    font-size: 0.95rem;
+  }
   section.quik-facts {
     margin: 5rem 1.5rem 5rem 1.5rem;
   }
@@ -1482,6 +1501,21 @@ footer div.wrapper .links a:hover {
   }
 }
 
+@media only screen and (max-width: 409px) {
+  .header .quik-facts-planet .big-wrapper {
+    margin-top: 3rem;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper {
+    text-align: center;
+  }
+  .header .quik-facts-planet .big-wrapper .wrapper .quik-fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
 @media only screen and (max-width: 392px) {
   header .left h1 {
     font-size: 2.4rem;
@@ -1556,6 +1590,17 @@ footer div.wrapper .links a:hover {
   }
   header .left p {
     width: 12rem;
+  }
+  .header .quik-facts-planet {
+    padding: 0 0 0 0;
+  }
+  .header .quik-facts-planet .big-wrapper {
+    margin: 0rem 0 3rem 0;
+    border-radius: 0 0 20px 20px;
+  }
+  .header .quik-facts-planet .big-wrapper .small-title {
+    font-size: .8rem;
+    font-weight: 500;
   }
   section.quik-facts .quik-fact p.number {
     font-size: 2.3rem;
