@@ -47,6 +47,21 @@ html.is-animating .transition-fade {
   background-color: #353535;
 }
 
+/*Makierter Text*/
+::-moz-selection {
+  background: #FDB513;
+  color: #121212;
+}
+::selection {
+  background: #FDB513;
+  color: #121212;
+}
+
+::-moz-selection {
+  background: #FDB513;
+  color: #121212;
+}
+
 body {
   background: #121212;
   margin: 0;

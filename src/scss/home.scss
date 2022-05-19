@@ -48,6 +48,20 @@ html.is-animating .transition-fade {
 
 
 
+
+/*Makierter Text*/
+
+::selection {
+    background: #FDB513; 
+    color: #121212;
+}
+::-moz-selection {
+    background: #FDB513;
+    color: #121212;
+}
+
+
+
 body {
     background: #121212;
     margin: 0;
@@ -279,7 +293,7 @@ section.orbit{
 
 
     /*Tooltip*/
-    
+
     .tooltip-dark{
         color: #f9f9f9;
         cursor: pointer;
