@@ -45,7 +45,7 @@ function close() {
 
 
 // Swup Reload Function
-function swup() {
+function init() {
   if (document.querySelector('.tooltip')) {
     const tooltips = document.querySelectorAll('.tooltip');
 

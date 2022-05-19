@@ -32,7 +32,7 @@ function close() {
 } // Swup Reload Function
 
 
-function swup() {
+function init() {
   if (document.querySelector('.tooltip')) {
     var _tooltips = document.querySelectorAll('.tooltip');
 
