@@ -107,6 +107,9 @@
     }
     .struggle.merkur{
       width: 27.7rem;
+    }
+    .struggle.venus{
+      width: 21.5rem;
   }
     .tabs .trigger{
       font-size: $base-font-size;
@@ -120,6 +123,10 @@
   
     .dropdown .content.active{
         font-size: $base-font-size;
+    }
+
+    .venus-gif{
+      height: 14.4rem;
     }
   }
   .more{
@@ -173,6 +180,10 @@
     img{
       display: none;
     }
+  }
+
+  .venus-gif{
+    height: 14.4rem;
   }
 
   section.quik-facts{
@@ -237,6 +248,10 @@
     }
   }
 
+  .venus-gif{
+    height: 14.4rem;
+  }
+
   /*Orbitale Ebene*/
   section.orbit{
     margin: 9rem $left-margin 9rem $left-margin;
@@ -258,6 +273,9 @@
 }
 
 @media only screen and (max-width: 1200px){
+  .venus-gif{
+    height: 14.4rem;
+  }
   .more{
     .planets{
       grid-template-columns: repeat(4, 1fr);
@@ -381,6 +399,7 @@
     .mercury-gif{
       margin: 0 1rem 0 .5rem;
     }
+
 
     .tabs {
       display: inline-block;

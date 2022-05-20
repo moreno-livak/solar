@@ -418,6 +418,10 @@ section.orbit .struggle.merkur {
   width: 24.7rem;
 }
 
+section.orbit .struggle.venus {
+  width: 19.45rem;
+}
+
 section.orbit .tabs .trigger {
   list-style-type: none;
   padding: 10px;
@@ -525,6 +529,10 @@ section.orbit .dropdown .content.active {
   opacity: 1;
   -webkit-animation: fadeIn 500ms;
           animation: fadeIn 500ms;
+}
+
+.venus-gif {
+  height: 14.4rem;
 }
 
 /*Live 3D Model*/
@@ -843,6 +851,9 @@ footer div.wrapper .links a:hover {
   section.orbit .struggle.merkur {
     width: 27.7rem;
   }
+  section.orbit .struggle.venus {
+    width: 21.5rem;
+  }
   section.orbit .tabs .trigger {
     font-size: 1.2rem;
   }
@@ -851,6 +862,9 @@ footer div.wrapper .links a:hover {
   }
   section.orbit .dropdown .content.active {
     font-size: 1.2rem;
+  }
+  section.orbit .venus-gif {
+    height: 14.4rem;
   }
   .more {
     margin: 3rem 14rem 4rem 14rem;
@@ -899,6 +913,9 @@ footer div.wrapper .links a:hover {
   header img {
     display: none;
   }
+  .venus-gif {
+    height: 14.4rem;
+  }
   section.quik-facts {
     margin: 7rem 10rem 6rem 10rem;
   }
@@ -940,6 +957,9 @@ footer div.wrapper .links a:hover {
   .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p {
     font-size: 1.1rem;
   }
+  .venus-gif {
+    height: 14.4rem;
+  }
   /*Orbitale Ebene*/
   section.orbit {
     margin: 9rem 5rem 9rem 5rem;
@@ -957,6 +977,9 @@ footer div.wrapper .links a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
+  .venus-gif {
+    height: 14.4rem;
+  }
   .more .planets {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
