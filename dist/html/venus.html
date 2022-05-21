@@ -78,7 +78,7 @@
     <section class="orbit">
       <h1>Physikalische Eigenschaften</h1>
       <p>Die Venus ist wegen der dicken Wolkendecke ein optisch sehr schöner 
-        und eleganter Planet, welcher sehr ruhig erscheint. Schaut man jedoch 
+        Planet, welcher sehr ruhig erscheint. Schaut man jedoch 
         unter die Wolkendecke, will man lieber nicht dort hin.</p>
       
 
@@ -106,7 +106,7 @@
       Schwesterplanet aber schon auf. Die  Atmosphäre der Venus ist 
       93-mal so dicht wie die der Erde und der Atmosphärendruck 
       entspricht mit 92
-      <span class="tooltip-light tooltip" id="" data-message="1 Einheit für Druck (1 Bar ~ Luftdruck der Erde)">Bar</span>
+      <span class="tooltip-light tooltip" id="" data-message="Einheit für Druck (1 Bar ~ Luftdruck der Erde)">Bar</span>
       einem 900 Meter tiefen Tauchgang im Meer, genug um jemanden umzubringen.
       <br><br>
       Wenn man es schaffen würde trotz des Druckes geradezustehen und am 
@@ -205,8 +205,7 @@
     <h2>Wetter</h2>
     <p>Windgeschwindigkeiten auf der Oberfläche der Venus sind mit nur ein 
       paar km/h sehr niedrig. Aber aufgrund der Dichte der Atmosphäre übt 
-      dieser Wind eine sehr starke Kraft 
-      <span class="tooltip-light tooltip" id="" data-message="Masse mal Geschwindigkeit">Kraft</span> auf Hindernisse 
+      dieser Wind eine sehr starke Kraft auf Hindernisse 
       aus und kann kleine Steine und Staub über die Oberfläche bewegen.</p>
 
       <div class="content">
@@ -226,7 +225,7 @@
        (108 Millionen Kilometer)
       , dieser Wert variiert kaum im Verlauf des Orbits und macht Venus den 
       Planeten mit der am 
-      <span class="tooltip-light tooltip" id="" data-message="Orbit ist fast ein nahezu perfekter Kreis">wenigsten exzentrischen</span> 
+      <span class="tooltip-light tooltip" id="" data-message="Orbit ist ein nahezu perfekter Kreis">wenigsten exzentrischen</span> 
       Umlaufbahn um die Sonne.</p>
 
 
@@ -273,8 +272,7 @@
 
     <h2>Sonnenverlauf</h2>
     <p>Wegen der Rotation der Venus dauert ein Tag 
-      (Sonnentag) 117 Erdtage und somit viel weniger als eine Rotation um sich 
-      selbst (siderischer Tag).</p>
+      (Sonnentag) 117 Erdtage und somit weniger als eine Rotation (siderischer Tag).</p>
 
     <div class="content">
       <video class="video" autoplay muted loop>
@@ -285,18 +283,43 @@
     </div>
 
 
+    <h1 class="top">Tonaufnahme</h1>
+    <p>In einem ganzen Venus Jahr erlebt man daher nur knapp unter zwei Sonnentage.</p>
 
-    <h2>Orbitale Ebene</h2>
-    <p>Die orbitale Ebene der Venus ist um 3,4° geneigt im Vergleich zur Erde.</p>
+    <audio id="player" src="../assets/Venus/Venus-Sound.mp3"></audio>
 
-    <div class="content">
-      <img src="../assets/Venus/Finsternis.png" alt="Merkur Orbit GIF">
+    <div class="content"> 
+      <img src="../assets/Venus/Surface.png" alt="">
       <div class="vl"></div>
-      <p>Wegen dieser Neigung sehen wir Venus nur selten zwischen uns und der Sonne. 
-        Die letzte „Venusfinsternis“ war 2012, diese passieren immer in Paaren welche 
-        8 Jahre voneinander entfernt sind, die Paare sind aber 100 Jahre voneinander 
-        entfernt. Die nächste passiert daher erst wieder im Jahr 2117.</p>
+
+      <section class="tonaufnahme">
+
+        <p>CONTROLS</p>
+        <div class="ton-kontrolle">
+          <button class="control" onclick="document.getElementById('player').play()">
+            <img src="../assets/Venus/Play.svg" alt="">
+            <p>Abspielen</p></p>
+          </button> 
+          <button class="control" onclick="document.getElementById('player').pause()">
+            <img src="../assets/Venus/Pause.svg" alt="">
+            <p>Pausieren</p></button>
+        </div> 
+
+        <p>LAUTSTÄRKE</p>
+        <div class="ton-kontrolle">
+        <button class="control" onclick="document.getElementById('player').volume += 0.15">
+          <img src="../assets/Venus/Plus.svg" alt="">
+          <p>Lauter</p>
+        </button> 
+        <button class="control" onclick="document.getElementById('player').volume -= 0.15">
+          <img src="../assets/Venus/Minus.svg" alt="">
+          <p>Leiser</p>
+        </button>
+      </div>
+    </section> 
     </div>
+
+
 
   </section>
 

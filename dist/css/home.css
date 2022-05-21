@@ -776,6 +776,51 @@ footer div.wrapper .links a:hover {
           transform: translate3d(0, 0px, 0);
 }
 
+div.content section.tonaufnahme {
+  margin: auto 0 auto 0;
+}
+
+div.content section.tonaufnahme p {
+  font-family: 'Poppins';
+  color: #BDBDBD;
+  font-size: .8rem;
+  font-weight: 400;
+  margin-top: .5rem;
+}
+
+div.content section.tonaufnahme div.ton-kontrolle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.content section.tonaufnahme button {
+  background: #121212;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 15px;
+  margin: .5rem 1rem .5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+div.content section.tonaufnahme button p {
+  color: white;
+  font-family: 'Poppins';
+  font-size: 1.1rem;
+  margin-top: .6rem;
+}
+
+div.content section.tonaufnahme button img {
+  border-radius: 0px;
+  margin: auto 1rem auto 1rem;
+  height: 1rem;
+  width: 1rem;
+}
+
 /*Media Queries*/
 @media only screen and (min-width: 1600px) {
   /*Navigation*/
@@ -1108,6 +1153,45 @@ footer div.wrapper .links a:hover {
   section.orbit .mercury-gif {
     margin: 0 1rem 0 .5rem;
   }
+  section.orbit div.content section.tonaufnahme {
+    margin: auto 0 auto 0;
+  }
+  section.orbit div.content section.tonaufnahme p {
+    font-family: 'Poppins';
+    color: #BDBDBD;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: .5rem;
+  }
+  section.orbit div.content section.tonaufnahme div.ton-kontrolle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.orbit div.content section.tonaufnahme button {
+    background: #121212;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 15px;
+    margin: .5rem 1rem .5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  section.orbit div.content section.tonaufnahme button p {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    margin-top: .6rem;
+  }
+  section.orbit div.content section.tonaufnahme button img {
+    border-radius: 0px;
+    margin: auto 1rem auto 1rem;
+    height: 1rem;
+    width: 1rem;
+  }
   section.orbit .tabs {
     display: inline-block;
   }
@@ -1281,6 +1365,45 @@ footer div.wrapper .links a:hover {
   }
   section.orbit div.content.GIF-Content {
     padding: .4rem 0rem .7rem 1.15rem;
+  }
+  section.orbit div.content section.tonaufnahme {
+    margin: auto 0 auto 0;
+  }
+  section.orbit div.content section.tonaufnahme p {
+    font-family: 'Poppins';
+    color: #BDBDBD;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: .5rem;
+  }
+  section.orbit div.content section.tonaufnahme div.ton-kontrolle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.orbit div.content section.tonaufnahme button {
+    background: #121212;
+    border: none;
+    width: 9rem;
+    height: 2.8rem;
+    border-radius: 15px;
+    margin: .4rem .7rem .4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  section.orbit div.content section.tonaufnahme button p {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    margin-top: .6rem;
+  }
+  section.orbit div.content section.tonaufnahme button img {
+    border-radius: 0px;
+    margin: auto .9rem auto .9rem;
+    height: .9rem;
+    width: .9rem;
   }
   section.orbit .mercury-gif {
     margin: 0 1rem -.5rem 0.3rem;
@@ -1474,6 +1597,45 @@ footer div.wrapper .links a:hover {
   section.orbit div.content.GIF-Content {
     padding: .3rem .5rem .7rem .7rem;
   }
+  section.orbit div.content section.tonaufnahme {
+    margin: auto 0 auto 0;
+  }
+  section.orbit div.content section.tonaufnahme p {
+    font-family: 'Poppins';
+    color: #BDBDBD;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: .5rem;
+  }
+  section.orbit div.content section.tonaufnahme div.ton-kontrolle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.orbit div.content section.tonaufnahme button {
+    background: #121212;
+    border: none;
+    width: 9rem;
+    height: 2.8rem;
+    border-radius: 15px;
+    margin: .4rem .7rem .4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  section.orbit div.content section.tonaufnahme button p {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 0.95rem;
+    margin-top: .6rem;
+  }
+  section.orbit div.content section.tonaufnahme button img {
+    border-radius: 0px;
+    margin: auto .5rem auto .9rem;
+    height: .9rem;
+    width: .9rem;
+  }
   section.orbit .mercury-gif {
     margin: 0 1rem -.5rem .5rem;
   }
@@ -1601,6 +1763,42 @@ footer div.wrapper .links a:hover {
   }
   section.orbit div.content p {
     text-align: left;
+  }
+  section.orbit div.content section.tonaufnahme {
+    margin: auto 0 auto 0;
+  }
+  section.orbit div.content section.tonaufnahme p {
+    font-family: 'Poppins';
+    color: #BDBDBD;
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  section.orbit div.content section.tonaufnahme div.ton-kontrolle {
+    display: block;
+  }
+  section.orbit div.content section.tonaufnahme button {
+    background: #121212;
+    border: none;
+    width: 9rem;
+    height: 2.8rem;
+    border-radius: 15px;
+    margin: .4rem .7rem .4rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  section.orbit div.content section.tonaufnahme button p {
+    color: white;
+    font-family: 'Poppins';
+    margin-top: .6rem;
+  }
+  section.orbit div.content section.tonaufnahme button img {
+    border-radius: 0px;
+    margin: auto .5rem auto .9rem;
+    height: .8rem;
+    width: .8rem;
   }
   .more h1 {
     font-size: 1.9rem;

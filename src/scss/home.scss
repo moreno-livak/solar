@@ -679,6 +679,43 @@ footer{
     }
   }
 
+  div.content{
+    section.tonaufnahme{
+        margin: auto 0 auto 0;
+        p{
+          font-family: 'Poppins';
+          color: #BDBDBD;
+          font-size: .8rem;
+          font-weight: 400;
+          margin-top: .5rem;
+        }
+        div.ton-kontrolle{
+            display: flex;
+        }
+        button{
+            background: #121212;
+            border: none;
+            width: 10rem;
+            height: 3rem;
+            border-radius: 15px;
+            margin: .5rem 1rem .5rem 0;
+            display: flex;
+            cursor: pointer;
+            p{
+                color: white;
+                font-family: 'Poppins';
+                font-size: $base-font-size;
+                margin-top: .6rem;
+            }
+            img{
+                border-radius: 0px;
+                margin: auto 1rem auto 1rem;
+                height: 1rem;
+                width: 1rem;
+             }
+        }
+    }
+  }
 
 /*Media Queries*/
 @import 'home-mq';
