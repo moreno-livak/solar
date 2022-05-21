@@ -342,7 +342,7 @@ section.orbit .tooltip-dark .tip {
   color: #fff;
   text-align: center;
   border-radius: 15px;
-  padding: 11px 7px 11px 7px;
+  padding: 11px 15px 11px 15px;
   position: absolute;
   display: inline-block;
   bottom: 120%;
@@ -374,12 +374,13 @@ section.orbit .tooltip-light {
 
 section.orbit .tooltip-light .tip {
   visibility: hidden;
-  width: 245px;
+  min-width: 150px;
+  max-width: 250px;
   background-color: #1E1E1E;
   color: #fff;
   text-align: center;
   border-radius: 15px;
-  padding: 11px 7px 11px 7px;
+  padding: 11px 15px 11px 15px;
   position: absolute;
   display: inline-block;
   bottom: 120%;
@@ -419,7 +420,7 @@ section.orbit .struggle.merkur {
 }
 
 section.orbit .struggle.venus {
-  width: 19.45rem;
+  width: 19.35rem;
 }
 
 section.orbit .tabs .trigger {
