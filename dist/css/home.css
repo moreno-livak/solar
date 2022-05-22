@@ -886,6 +886,45 @@ div.content section.tonaufnahme button img {
   section.orbit div.content p {
     font-size: 1.2rem;
   }
+  section.orbit div.content section.tonaufnahme {
+    margin: auto 0 auto 0;
+  }
+  section.orbit div.content section.tonaufnahme p {
+    font-family: 'Poppins';
+    color: #BDBDBD;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: .5rem;
+  }
+  section.orbit div.content section.tonaufnahme div.ton-kontrolle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.orbit div.content section.tonaufnahme button {
+    background: #121212;
+    border: none;
+    width: 11rem;
+    height: 3rem;
+    border-radius: 15px;
+    margin: .5rem 1rem .5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  section.orbit div.content section.tonaufnahme button p {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    margin-top: .5rem;
+  }
+  section.orbit div.content section.tonaufnahme button img {
+    border-radius: 0px;
+    margin: auto 1rem auto 1rem;
+    height: 1rem;
+    width: 1rem;
+  }
   section.orbit h2 {
     font-size: 2.2rem;
   }
