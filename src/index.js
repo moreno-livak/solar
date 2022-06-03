@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 
 // tooltip
 const tooltips = document.querySelectorAll('.tooltip');
