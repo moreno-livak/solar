@@ -1,6 +1,12 @@
 
 // Swup Reload Function
 function init() {
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+  
+  
   if (document.querySelector('.tooltip')) {
     const tooltips = document.querySelectorAll('.tooltip');
 
