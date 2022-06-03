@@ -2,10 +2,11 @@
 // Swup Reload Function
 function init() {
 
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
+  function scrollToPlace(){ 
+    let myElement = document.querySelector("#need-to-scroll-here"); // Here is the element that we want to scroll to 
+    let position = getPosition(myElement);     
+    pageWrapper.scrollTo(0, position.y);
   }
-  
   
   if (document.querySelector('.tooltip')) {
     const tooltips = document.querySelectorAll('.tooltip');
