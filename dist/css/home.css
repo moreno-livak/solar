@@ -1859,8 +1859,11 @@ div.content section.tonaufnahme button img {
     -ms-grid-rows: (1fr)[7];
         grid-template-rows: repeat(7, 1fr);
   }
+  footer {
+    margin-top: -1rem;
+  }
   footer div.wrapper {
-    margin: 0rem 1.5rem 3.3rem 1.5rem;
+    margin: 1rem 1.5rem 3.3rem 1.5rem;
   }
   footer div.wrapper .links {
     display: block;

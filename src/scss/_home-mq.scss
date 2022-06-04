@@ -1179,8 +1179,9 @@
     }
   }
   footer{
+    margin-top: -1rem;
     div.wrapper{
-      margin: 0rem $left-margin 3.3rem $left-margin;
+      margin: 1rem $left-margin 3.3rem $left-margin;
       .links{
         display: block;
         a{
