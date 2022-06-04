@@ -71,6 +71,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 /*Navigation*/
 nav {
   border-bottom: 1px #2C2C2C solid;
