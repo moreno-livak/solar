@@ -1821,7 +1821,7 @@ div.content section.tonaufnahme button img {
     font-size: .8rem;
     font-weight: 400;
     margin-top: 1rem;
-    margin-left: 0;
+    margin-left: 0.2rem;
   }
   section.orbit div.content section.tonaufnahme div.ton-kontrolle {
     display: block;
