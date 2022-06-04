@@ -1789,12 +1789,15 @@ div.content section.tonaufnahme button img {
   }
   section.orbit h1 {
     font-size: 1.9rem;
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0 1.3rem 0;
+  }
+  section.orbit .top {
+    margin-top: 2rem;
   }
   section.orbit h2 {
     font-size: 1.7rem;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
   }
   section.orbit p {
     text-align: left;
@@ -1860,7 +1863,7 @@ div.content section.tonaufnahme button img {
         grid-template-rows: repeat(7, 1fr);
   }
   footer {
-    margin-top: -.5rem;
+    margin-top: -.3rem;
   }
   footer div.wrapper {
     margin: 1rem 1.5rem 1.8rem 1.5rem;

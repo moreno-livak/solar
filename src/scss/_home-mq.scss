@@ -1106,12 +1106,15 @@
     margin: 2rem $left-margin 2rem $left-margin;
     h1{
       font-size: $h1;
-      margin: 2rem 0 1rem 0;
+      margin: 2rem 0 1.3rem 0;
+    }
+    .top{
+      margin-top: 2rem;
     }
     h2{
       font-size: $h2;
-      margin-top: 4rem;
-      margin-bottom: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1.3rem;
     }
     p{
       text-align: left;
@@ -1179,7 +1182,7 @@
     }
   }
   footer{
-    margin-top: -.5rem;
+    margin-top: -.3rem;
     div.wrapper{
       margin: 1rem $left-margin 1.8rem $left-margin;
       .links{
