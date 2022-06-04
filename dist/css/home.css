@@ -1802,6 +1802,9 @@ div.content section.tonaufnahme button img {
   section.orbit p {
     text-align: left;
   }
+  section.orbit p.under {
+    margin-top: 1rem;
+  }
   section.orbit div.content {
     display: block;
     padding: .7rem .7rem .7rem .7rem;
@@ -1851,6 +1854,9 @@ div.content section.tonaufnahme button img {
     margin: auto .5rem auto .9rem;
     height: .8rem;
     width: .8rem;
+  }
+  section.orbit .dropdown .trigger {
+    margin: 1rem 0 1em 0;
   }
   .more h1 {
     font-size: 1.9rem;

@@ -1119,6 +1119,9 @@
     p{
       text-align: left;
     }
+    p.under{
+      margin-top: 1rem
+    }
     div.content{
         display: block;
         padding: .7rem .7rem .7rem .7rem;
@@ -1169,6 +1172,9 @@
           }
       }
     }
+    .dropdown .trigger{
+      margin: 1rem 0 1em 0;
+  }
   }
   
   .more{
