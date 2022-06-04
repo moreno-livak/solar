@@ -149,9 +149,7 @@ nav ul li a:hover:before {
 }
 
 nav ul li .active {
-  text-decoration: underline;
-  color: #ffffff;
-  text-underline-offset: 0.14em;
+  font-weight: bold;
 }
 
 /*Header*/
