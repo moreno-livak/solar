@@ -170,7 +170,7 @@ header .left {
 }
 
 header .left h1 {
-  font-family: 'Playfair+Display';
+  font-family: "Playfair+Display" !important;
   font-size: 3.4rem;
   width: 10em;
 }
@@ -246,7 +246,7 @@ section.quik-facts .quik-fact {
 }
 
 section.quik-facts .quik-fact p.number {
-  font-family: 'Playfair';
+  font-family: 'Playfair' !important;
   font-size: 3.3rem;
   font-weight: bold;
   color: #ffffff;
@@ -270,7 +270,7 @@ section.orbit {
 
 section.orbit h1 {
   font-size: 2.5rem;
-  font-family: 'Playfair';
+  font-family: "Playfair" !important;
   font-weight: bold;
 }
 
@@ -325,7 +325,7 @@ section.orbit div.content.GIF-Content {
 
 section.orbit h2 {
   font-size: 2.1rem;
-  font-family: 'Playfair';
+  font-family: "Playfair" !important;
   font-weight: bold;
   margin-top: 4rem;
 }
@@ -553,7 +553,7 @@ iframe {
 
 .more h1 {
   font-size: 2.5rem;
-  font-family: 'Playfair';
+  font-family: "Playfair" !important;
   font-weight: bold;
 }
 
@@ -703,7 +703,7 @@ footer .top {
 
 .header .quik-facts-planet .big-wrapper h1 {
   font-size: 3.4rem;
-  font-family: 'Playfair-Display';
+  font-family: "Playfair-Display" !important;
   margin: 2.5rem 1rem 2.5rem 1rem;
 }
 
@@ -733,7 +733,7 @@ footer .top {
 }
 
 .header .quik-facts-planet .big-wrapper .wrapper .quik-fact p.number {
-  font-family: 'Playfair';
+  font-family: "Playfair" !important;
   font-size: 2.5rem;
   font-weight: bold;
   color: #ffffff;

@@ -156,7 +156,7 @@ header{
         float:left;
         margin: 8rem 0 0 $left-margin;
         h1{
-            font-family: 'Playfair+Display';
+            font-family: 'Playfair+Display'!important;
             font-size: $main-title;
             width: 10em;
         }
@@ -217,7 +217,7 @@ section.quik-facts{
         display: flex;
         margin: 0 2rem 0 2rem;
         p.number{
-            font-family: 'Playfair';
+            font-family: 'Playfair' !important;
             font-size: 3.3rem;
             font-weight: bold;
             color: #ffffff;
@@ -241,7 +241,7 @@ section.orbit{
     margin: 9rem $left-margin 9rem $left-margin;
     h1{
         font-size: $h1;
-        font-family: 'Playfair';
+        font-family: 'Playfair'!important;
         font-weight: bold;
     }
 
@@ -291,7 +291,7 @@ section.orbit{
 
     h2{
         font-size: $h2;
-        font-family: 'Playfair';
+        font-family: 'Playfair'!important;
         font-weight: bold;
         margin-top: 4rem;
     }
@@ -499,7 +499,7 @@ iframe{
     margin: -2.5rem $left-margin 4rem $left-margin;
     h1{
         font-size: $h1;
-        font-family: 'Playfair';
+        font-family: 'Playfair'!important;
         font-weight: bold;
     }
     .planets{
@@ -622,7 +622,7 @@ footer{
             border-radius: 30px;
             h1{
                 font-size: $main-title;
-                font-family: 'Playfair-Display';
+                font-family: 'Playfair-Display'!important;
                 margin: 2.5rem 1rem 2.5rem 1rem;
             }
             .small-title{
@@ -639,7 +639,7 @@ footer{
                     display: flex;
                     margin: 0 1rem 0 1rem;
                     p.number{
-                        font-family: 'Playfair';
+                        font-family: 'Playfair'!important;
                         font-size: $h1;
                         font-weight: bold;
                         color: #ffffff;
