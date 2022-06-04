@@ -1858,6 +1858,9 @@ div.content section.tonaufnahme button img {
   section.orbit .dropdown .trigger {
     margin: 1rem 0 1em 0;
   }
+  section.orbit .dropdown .trigger.active {
+    margin-top: 1rem;
+  }
   .more h1 {
     font-size: 1.9rem;
     margin-top: 4.5rem;

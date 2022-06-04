@@ -1174,7 +1174,10 @@
     }
     .dropdown .trigger{
       margin: 1rem 0 1em 0;
-  }
+    }
+    .dropdown .trigger.active{
+      margin-top: 1rem;
+    }
   }
   
   .more{
