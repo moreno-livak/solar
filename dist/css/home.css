@@ -29,10 +29,6 @@ html.is-animating .transition-fade {
           transform: translateY(40px);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: .7em;
