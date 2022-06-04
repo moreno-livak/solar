@@ -29,6 +29,10 @@ html.is-animating .transition-fade {
           transform: translateY(40px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Scrollbar*/
 ::-webkit-scrollbar {
   width: .7em;
@@ -643,6 +647,11 @@ footer div.wrapper .links a:hover {
   -webkit-text-decoration: underline 2px #BDBDBD;
           text-decoration: underline 2px #BDBDBD;
   text-underline-offset: 2px;
+}
+
+footer .top {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*Sonstiges von anderen Seiten*/

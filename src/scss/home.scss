@@ -24,6 +24,10 @@ html.is-animating .transition-fade {
     transform: translateY(40px);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 
@@ -70,6 +74,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 
 
 
@@ -569,6 +574,10 @@ footer{
             }
             
         }
+    }
+    .top{
+        color: #ffffff;
+        text-decoration: none;
     }
 }
 
