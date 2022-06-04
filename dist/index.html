@@ -294,7 +294,6 @@
                     <a href="">Quellen</a>
                 </div>
             </div> 
-            <a href="#top">Go to top</a>
         </div>
     </footer>
 
@@ -308,27 +307,19 @@
             animationSelector: '[class*="transition-fade"]',
             animateHistoryBrowsing: true,
             plugins: [
-
                 new SwupScrollPlugin({
-                    animateScroll: false
+                    animateScroll: true
                 })
             ]
         };
         const swup = new Swup(options);
-        init();
 
-        swup.on('contentReplaced', init);
+        init();
         let scrollValues = {};
 
-        swup.on('clickLink', () => {
-            scrollValues[window.location.href] = window.scrollY;
-        });
-
-        swup.on('popState', () => {
-            setTimeout(function() {
-                window.scrollTo(0, scrollValues[window.location.href]);
-            }, 100);
-        });
+        swup.on('contentReplaced', init);
+        swup.on('clickLink', () => {scrollValues[window.location.href] = window.scrollY;});
+        swup.on('popState', () => {setTimeout(function() {window.scrollTo(0, scrollValues[window.location.href]);}, 100);});
     </script>
     <script src="scripts/index.js"></script>
 </body>
