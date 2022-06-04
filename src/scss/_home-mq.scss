@@ -823,7 +823,7 @@
       }
     }
     .second-nav{
-        margin: .4rem $left-margin .8rem $left-margin;
+        margin: .4rem $left-margin .5rem $left-margin;
         a{
           margin-bottom: .2rem;
         }
@@ -1125,6 +1125,7 @@
     div.content{
         display: block;
         padding: .7rem .7rem .7rem .7rem;
+        margin-top: -1rem;
         img{
           height: 7rem;
         }

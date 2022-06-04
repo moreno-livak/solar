@@ -1544,7 +1544,7 @@ div.content section.tonaufnahme button img {
     height: 1rem;
   }
   nav .second-nav {
-    margin: 0.4rem 1.5rem 0.8rem 1.5rem;
+    margin: 0.4rem 1.5rem 0.5rem 1.5rem;
   }
   nav .second-nav a {
     margin-bottom: .2rem;
@@ -1808,6 +1808,7 @@ div.content section.tonaufnahme button img {
   section.orbit div.content {
     display: block;
     padding: .7rem .7rem .7rem .7rem;
+    margin-top: -1rem;
   }
   section.orbit div.content img {
     height: 7rem;
