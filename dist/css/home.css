@@ -601,7 +601,7 @@ iframe {
 
 /*Footer*/
 footer {
-  margin-top: 8rem;
+  margin-top: 4rem;
   border-top: 1px #2C2C2C solid;
 }
 
@@ -1303,6 +1303,9 @@ div.content section.tonaufnahme button img {
     -webkit-column-gap: 1.5rem;
             column-gap: 1.5rem;
     row-gap: 1.5rem;
+  }
+  footer {
+    margin-top: 1.5rem;
   }
 }
 
