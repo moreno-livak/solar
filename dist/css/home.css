@@ -1821,6 +1821,7 @@ div.content section.tonaufnahme button img {
     font-size: .8rem;
     font-weight: 400;
     margin-top: 1rem;
+    margin-left: 0;
   }
   section.orbit div.content section.tonaufnahme div.ton-kontrolle {
     display: block;
@@ -1859,7 +1860,7 @@ div.content section.tonaufnahme button img {
         grid-template-rows: repeat(7, 1fr);
   }
   footer div.wrapper {
-    margin: 1rem 1.5rem 3.3rem 1.5rem;
+    margin: 0rem 1.5rem 3.3rem 1.5rem;
   }
   footer div.wrapper .links {
     display: block;

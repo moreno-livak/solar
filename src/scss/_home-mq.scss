@@ -1138,6 +1138,7 @@
             font-size: .8rem;
             font-weight: 400;
             margin-top: 1rem;
+            margin-left: 0;
           }
           div.ton-kontrolle{
               display: block;
@@ -1179,7 +1180,7 @@
   }
   footer{
     div.wrapper{
-      margin: 1rem $left-margin 3.3rem $left-margin;
+      margin: 0rem $left-margin 3.3rem $left-margin;
       .links{
         display: block;
         a{
