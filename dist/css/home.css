@@ -149,7 +149,7 @@ nav ul li a:hover:before {
 }
 
 nav ul li .active {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /*Header*/
