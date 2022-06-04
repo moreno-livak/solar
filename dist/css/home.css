@@ -1860,10 +1860,10 @@ div.content section.tonaufnahme button img {
         grid-template-rows: repeat(7, 1fr);
   }
   footer {
-    margin-top: -1rem;
+    margin-top: -.5rem;
   }
   footer div.wrapper {
-    margin: 1rem 1.5rem 3.3rem 1.5rem;
+    margin: 1rem 1.5rem 1.8rem 1.5rem;
   }
   footer div.wrapper .links {
     display: block;
