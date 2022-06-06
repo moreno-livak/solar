@@ -317,6 +317,23 @@ section.orbit div.content img {
   border-radius: 15px;
 }
 
+section.orbit .credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+section.orbit .credit small {
+  color: #C7C7C7;
+  margin-left: 1rem;
+  margin-top: .1rem;
+}
+
+section.orbit .credit small a {
+  color: #C7C7C7;
+}
+
 section.orbit div.content.GIF-Content {
   padding: .2rem 2.5rem .2rem .8rem;
 }
@@ -422,6 +439,10 @@ section.orbit .struggle.merkur {
 
 section.orbit .struggle.venus {
   width: 19.35rem;
+}
+
+section.orbit .struggle.erde {
+  width: 20.5rem;
 }
 
 section.orbit .tabs .trigger {
@@ -944,6 +965,9 @@ div.content section.tonaufnahme button img {
   }
   section.orbit .struggle.venus {
     width: 21.5rem;
+  }
+  section.orbit .struggle.erde {
+    width: 22.85rem;
   }
   section.orbit .tabs .trigger {
     font-size: 1.2rem;

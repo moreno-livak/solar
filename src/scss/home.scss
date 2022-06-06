@@ -283,6 +283,19 @@ section.orbit{
         }
     }
 
+    .credit{
+        display: flex;
+        margin-top: 1rem;
+        small{
+            color: #C7C7C7;
+            margin-left: 1rem;
+            margin-top: .1rem;
+            a{
+                color: #C7C7C7;
+            }
+        }
+    }
+
     div.content.GIF-Content{
         padding: .2rem 2.5rem .2rem .8rem;
     }
@@ -378,6 +391,9 @@ section.orbit{
     }
     .struggle.venus{
         width: 19.35rem;
+    }
+    .struggle.erde{
+        width: 20.5rem;
     }
     .tabs .trigger{
         list-style-type: none;
