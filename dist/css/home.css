@@ -1269,6 +1269,9 @@ div.content section.tonaufnahme button img {
     height: 1rem;
     width: 1rem;
   }
+  section.orbit .credits {
+    display: none;
+  }
   section.orbit .tabs {
     display: inline-block;
   }
