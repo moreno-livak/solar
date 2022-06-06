@@ -14,6 +14,10 @@
           a{
               font-size: $base-font-size;
           }
+          .active{
+            text-decoration: underline 2px solid white;
+            text-underline-offset: 3px;
+          }
       }
     }
   }

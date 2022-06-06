@@ -135,7 +135,8 @@ nav {
                 }
             }
             .active{
-                font-weight: 600;
+                text-decoration: underline 2px solid white;
+                text-underline-offset: 2px;
             }
         }
     }

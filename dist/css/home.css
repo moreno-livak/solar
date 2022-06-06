@@ -149,7 +149,9 @@ nav ul li a:hover:before {
 }
 
 nav ul li .active {
-  font-weight: 600;
+  -webkit-text-decoration: underline 2px solid white;
+          text-decoration: underline 2px solid white;
+  text-underline-offset: 2px;
 }
 
 /*Header*/
@@ -857,6 +859,11 @@ div.content section.tonaufnahme button img {
   }
   nav ul li a {
     font-size: 1.2rem;
+  }
+  nav ul li .active {
+    -webkit-text-decoration: underline 2px solid white;
+            text-decoration: underline 2px solid white;
+    text-underline-offset: 3px;
   }
   /*Header*/
   header .left {
